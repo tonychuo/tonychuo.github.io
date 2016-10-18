@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>聯合分析與行銷策略</title>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+  <meta name="description" content="聯合分析與行銷策略">
+  <meta name="generator" content="bookdown 0.1 and GitBook 2.6.7">
+
+  <meta property="og:title" content="聯合分析與行銷策略" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="聯合分析與行銷策略" />
+  
+  
+  
+
+<meta name="author" content="Tony Chuo, tonychuo@gmail.com">
+
+<meta name="date" content="2016-10-18">
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="conjoint.html">
+<link rel="next" href="segment.html">
+
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+<script src="libs/htmlwidgets-0.7/htmlwidgets.js"></script>
+<script src="libs/amcharts-3.20.10/amcharts.js"></script>
+<script src="libs/ramcharts_base-binding-2.1.1/ramcharts_base.js"></script>
+<script src="libs/amcharts_type_pie-3.20.10/pie.js"></script>
+<script src="libs/underscore-1.8.3/underscore-min.js"></script>
+<link href="libs/highcharts-4.2.4/css/motion.css" rel="stylesheet" />
+<script src="libs/highcharts-4.2.4/highstock.js"></script>
+<script src="libs/highcharts-4.2.4/highcharts-more.js"></script>
+<script src="libs/highcharts-4.2.4/highcharts-3d.js"></script>
+<script src="libs/highcharts-4.2.4/modules/exporting.js"></script>
+<script src="libs/highcharts-4.2.4/modules/drilldown.js"></script>
+<script src="libs/highcharts-4.2.4/modules/data.js"></script>
+<script src="libs/highcharts-4.2.4/modules/heatmap.js"></script>
+<script src="libs/highcharts-4.2.4/modules/map.js"></script>
+<script src="libs/highcharts-4.2.4/modules/treemap.js"></script>
+<script src="libs/highcharts-4.2.4/modules/funnel.js"></script>
+<script src="libs/highcharts-4.2.4/modules/solid-gauge.js"></script>
+<script src="libs/highcharts-4.2.4/modules/reset.js"></script>
+<script src="libs/highcharts-4.2.4/plugins/annotations.js"></script>
+<script src="libs/highcharts-4.2.4/plugins/motion.js"></script>
+<script src="libs/highcharts-4.2.4/plugins/draggable-points.js"></script>
+<script src="libs/highcharts-4.2.4/plugins/pattern-fill-v2.js"></script>
+<script src="libs/highcharts-4.2.4/plugins/text-symbols.js"></script>
+<script src="libs/highcharts-4.2.4/plugins/symbols-extra.js"></script>
+<link href="libs/fontawesome-4.5.0/font-awesome.min.css" rel="stylesheet" />
+<link href="libs/htmlwdgtgrid-1/htmlwdgtgrid.css" rel="stylesheet" />
+<script src="libs/highchart-binding-0.4.0/highchart.js"></script>
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="http://msrc.cm.nsysu.edu.tw/files/14-1135-157765,r1143-1.php" target="blank">
+<img src="bm.png" alt="聯合分析與行銷策略" style="width:250px;height:60px"></a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>前言</a><ul>
+<li><a href="index.html#--"><strong>課程需求</strong> 與 <strong>課前準備</strong></a></li>
+<li><a href="index.html#3c7374726f6e673ee881afe59088e58886e69e90e7b0a1e4bb8b3c2f7374726f6e673e"><strong>聯合分析簡介</strong></a></li>
+<li><a href="index.html#3c7374726f6e673ee8aab2e7a88be585a7e5aeb9e7b0a1e4bb8b3c2f7374726f6e673e"><strong>課程內容簡介</strong></a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="conjoint.html"><a href="conjoint.html"><i class="fa fa-check"></i><b>1</b> 聯合分析</a><ul>
+<li class="chapter" data-level="1.1" data-path="conjoint.html"><a href="conjoint.html#section-1.1"><i class="fa fa-check"></i><b>1.1</b> 案例資料</a></li>
+<li class="chapter" data-level="1.2" data-path="conjoint.html"><a href="conjoint.html#section-1.2"><i class="fa fa-check"></i><b>1.2</b> 屬性的重要性</a></li>
+<li class="chapter" data-level="1.3" data-path="conjoint.html"><a href="conjoint.html#-apw"><i class="fa fa-check"></i><b>1.3</b> 選項的平均價值 (APW)</a></li>
+<li class="chapter" data-level="1.4" data-path="conjoint.html"><a href="conjoint.html#section-1.4"><i class="fa fa-check"></i><b>1.4</b> 受測群體的平均喜好</a></li>
+<li class="chapter" data-level="1.5" data-path="conjoint.html"><a href="conjoint.html#section-1.5"><i class="fa fa-check"></i><b>1.5</b> 個人的喜好差異</a></li>
+<li class="chapter" data-level="1.6" data-path="conjoint.html"><a href="conjoint.html#section-1.6"><i class="fa fa-check"></i><b>1.6</b> 效用函數</a></li>
+<li class="chapter" data-level="1.7" data-path="conjoint.html"><a href="conjoint.html#section-1.7"><i class="fa fa-check"></i><b>1.7</b> 市占率</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="newProd.html"><a href="newProd.html"><i class="fa fa-check"></i><b>2</b> 產品設計與定價策略</a><ul>
+<li class="chapter" data-level="2.1" data-path="newProd.html"><a href="newProd.html#section-2.1"><i class="fa fa-check"></i><b>2.1</b> 成本函數</a></li>
+<li class="chapter" data-level="2.2" data-path="newProd.html"><a href="newProd.html#section-2.2"><i class="fa fa-check"></i><b>2.2</b> 價量關係、營收、獲利</a></li>
+<li class="chapter" data-level="" data-path="newProd.html"><a href="newProd.html#sim-1-"><i class="fa fa-check"></i>SIM-1: 產品設計與定價策略</a></li>
+<li class="chapter" data-level="2.3" data-path="newProd.html"><a href="newProd.html#section-2.3"><i class="fa fa-check"></i><b>2.3</b> 自動模擬</a></li>
+<li class="chapter" data-level="2.4" data-path="newProd.html"><a href="newProd.html#section-2.4"><i class="fa fa-check"></i><b>2.4</b> 策略目標、策略優化</a></li>
+<li class="chapter" data-level="2.5" data-path="newProd.html"><a href="newProd.html#section-2.5"><i class="fa fa-check"></i><b>2.5</b> 目標的範圍、合理的策略</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="segment.html"><a href="segment.html"><i class="fa fa-check"></i><b>3</b> 族群分析與市場區隔</a><ul>
+<li class="chapter" data-level="3.1" data-path="segment.html"><a href="segment.html#-k-means"><i class="fa fa-check"></i><b>3.1</b> 族群分析 (K-means)</a></li>
+<li class="chapter" data-level="3.2" data-path="segment.html"><a href="segment.html#average-part-worth-per-segment-apwps"><i class="fa fa-check"></i><b>3.2</b> Average Part Worth per Segment (APWPS)</a></li>
+<li class="chapter" data-level="" data-path="segment.html"><a href="segment.html#sim-2-"><i class="fa fa-check"></i>SIM-2: 族群分析與市場區隔</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="twoProd.html"><a href="twoProd.html"><i class="fa fa-check"></i><b>4</b> 雙產品市場</a><ul>
+<li class="chapter" data-level="4.1" data-path="twoProd.html"><a href="twoProd.html#section-4.1"><i class="fa fa-check"></i><b>4.1</b> 價量關係</a></li>
+<li class="chapter" data-level="" data-path="twoProd.html"><a href="twoProd.html#sim-3-"><i class="fa fa-check"></i>SIM-3: 雙產品市場模擬</a></li>
+<li class="chapter" data-level="4.2" data-path="twoProd.html"><a href="twoProd.html#section-4.2"><i class="fa fa-check"></i><b>4.2</b> 競爭策略</a></li>
+<li class="chapter" data-level="4.3" data-path="twoProd.html"><a href="twoProd.html#section-4.3"><i class="fa fa-check"></i><b>4.3</b> 產品線規劃</a></li>
+<li class="chapter" data-level="4.4" data-path="twoProd.html"><a href="twoProd.html#-1"><i class="fa fa-check"></i><b>4.4</b> 自動模擬</a><ul>
+<li class="chapter" data-level="4.4.1" data-path="twoProd.html"><a href="twoProd.html#section-4.4.1"><i class="fa fa-check"></i><b>4.4.1</b> 價格空間</a></li>
+<li class="chapter" data-level="4.4.2" data-path="twoProd.html"><a href="twoProd.html#section-4.4.2"><i class="fa fa-check"></i><b>4.4.2</b> 產品組合</a></li>
+<li class="chapter" data-level="4.4.3" data-path="twoProd.html"><a href="twoProd.html#section-4.4.3"><i class="fa fa-check"></i><b>4.4.3</b> 模擬結果</a></li>
+</ul></li>
+<li class="chapter" data-level="4.5" data-path="twoProd.html"><a href="twoProd.html#section-4.5"><i class="fa fa-check"></i><b>4.5</b> 產品差異的重要性</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="mLogit.html"><a href="mLogit.html"><i class="fa fa-check"></i><b>5</b> A mLogit CBC Example</a><ul>
+<li class="chapter" data-level="5.1" data-path="mLogit.html"><a href="mLogit.html#the-tv-dataset"><i class="fa fa-check"></i><b>5.1</b> The TV Dataset</a></li>
+<li class="chapter" data-level="5.2" data-path="mLogit.html"><a href="mLogit.html#multinominal-logit-model"><i class="fa fa-check"></i><b>5.2</b> Multinominal Logit Model</a></li>
+<li class="chapter" data-level="5.3" data-path="mLogit.html"><a href="mLogit.html#regression-interpolation-of-price-coefficients"><i class="fa fa-check"></i><b>5.3</b> Regression (Interpolation) of Price Coefficients</a></li>
+<li class="chapter" data-level="5.4" data-path="mLogit.html"><a href="mLogit.html#market-simulation"><i class="fa fa-check"></i><b>5.4</b> Market Simulation</a></li>
+<li class="chapter" data-level="" data-path="mLogit.html"><a href="mLogit.html#quiz-6-"><i class="fa fa-check"></i>QUIZ-6 市占率與價格彈性</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="http://www.cm.nsysu.edu.tw/bin/home.php" target="blank">
+中山大學管理學院</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">聯合分析與行銷策略</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="newProd" class="section level1">
+<h1><span class="header-section-number">2</span> 產品設計與定價策略</h1>
+<p>假設你要推出一個全新的產品到一個新市場：</p>
+<ul>
+<li>你要推出什麼規格的產品？</li>
+<li>你要訂什麼價格？</li>
+<li>給定「策略目標」，如何找到「最佳」的產品和價格策略？</li>
+<li>在多重策略目標之下，一個「合理」的策略需要有什麼條件？</li>
+</ul>
+<div id="section-2.1" class="section level2">
+<h2><span class="header-section-number">2.1</span> 成本函數</h2>
+<p>設定每一個選項的成本 <code>costs</code>，然後定義一個成本函數 <code>PC(pd)</code></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">costs =<span class="st"> </span><span class="kw">list</span>(<span class="dt">bitter =</span>  <span class="kw">c</span>(<span class="fl">0.3</span>, <span class="fl">0.2</span>, <span class="fl">0.1</span>),
+             <span class="dt">variety =</span> <span class="kw">c</span>(<span class="fl">0.9</span>, <span class="fl">0.5</span>, <span class="fl">0.2</span>),
+             <span class="dt">kind  =</span>   <span class="kw">c</span>(<span class="fl">0.5</span>, <span class="fl">0.3</span>, <span class="fl">0.6</span>),
+             <span class="dt">arom =</span>    <span class="kw">c</span>(<span class="fl">0.7</span>, <span class="fl">0.4</span>) )
+PC =<span class="st"> </span>function(pd) { <span class="fl">2.5</span> +<span class="st"> </span><span class="kw">sum</span>(<span class="kw">sapply</span>(<span class="dv">1</span>:<span class="kw">length</span>(att), function(i) costs[[i]][pd[i]] )) }
+<span class="kw">PC</span>(<span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">3</span>,<span class="dv">1</span>))</code></pre></div>
+<pre><code>## [1] 5</code></pre>
+</div>
+<div id="section-2.2" class="section level2">
+<h2><span class="header-section-number">2.2</span> 價量關係、營收、獲利</h2>
+<p>給定 <strong>產品</strong> 與 <strong>價格</strong>，我們可以算出 <strong>銷售量</strong> 、 <strong>營收</strong> 、 <strong>獲利</strong> 和 <strong>滲透率</strong> ：<br> Given price <span class="math inline">\(p\)</span>, marginal cost <span class="math inline">\(c\)</span>, and respondent <span class="math inline">\(i\)</span>’s utility (<span class="math inline">\(u_i\)</span>): <br> <span class="math display">\[
+\left\{\begin{matrix}
+q(p) = \sum_i I(u_i &gt; p) &amp; quantity\\  
+r(p) = q(p) * p &amp; revenue\\ 
+\pi(p) = q(p) * (p - c) &amp; profit 
+\end{matrix}\right.
+\]</span></p>
+<p>給定產品規格，我們可以在價格區間之中描出：</p>
+<ul>
+<li>需求曲線: <span class="math inline">\(q(p)\)</span></li>
+<li>營收曲線: <span class="math inline">\(r(p)\)</span></li>
+<li>獲利曲線: <span class="math inline">\(\pi(p)\)</span></li>
+</ul>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">pqr =<span class="st"> </span>function(p, m, u) {
+  q =<span class="st"> </span><span class="kw">sapply</span>(p, function(x) <span class="kw">sum</span>(u &gt;<span class="st"> </span>x) )
+  pf =<span class="st"> </span>q *<span class="st"> </span>(p-m); ip =<span class="st"> </span><span class="kw">which.max</span>(pf)
+  r  =<span class="st"> </span>q *<span class="st"> </span>p;     ir =<span class="st"> </span><span class="kw">which.max</span>(r)
+  <span class="kw">par</span>(<span class="dt">cex=</span><span class="fl">0.7</span>,<span class="dt">mar=</span><span class="kw">c</span>(<span class="dv">5</span>,<span class="dv">4</span>,<span class="dv">4</span>,<span class="dv">3</span>))
+  <span class="kw">plot</span>(p,q,<span class="dt">type=</span><span class="st">&#39;l&#39;</span>,<span class="dt">main=</span><span class="st">&quot;Demand Cruve&quot;</span>,<span class="dt">xlab=</span><span class="st">&quot;price&quot;</span>,<span class="dt">ylab=</span><span class="st">&quot;qty&quot;</span>,<span class="dt">ylim=</span><span class="kw">c</span>(<span class="dv">0</span>,<span class="dv">80</span>))
+  <span class="kw">abline</span>(<span class="dt">v=</span>p[ip],<span class="dt">col=</span><span class="st">&#39;pink&#39;</span>); <span class="kw">abline</span>(<span class="dt">v=</span>p[ir],<span class="dt">col=</span><span class="st">&#39;cyan&#39;</span>)
+  <span class="kw">abline</span>(<span class="dt">h=</span><span class="kw">seq</span>(<span class="dv">20</span>,<span class="dv">80</span>,<span class="dv">20</span>),<span class="dt">lty=</span><span class="dv">3</span>,<span class="dt">col=</span><span class="st">&#39;grey&#39;</span>)
+  <span class="kw">plot</span>(p, r, <span class="dt">type=</span><span class="st">&#39;l&#39;</span>,<span class="dt">main=</span><span class="st">&quot;Revenue&quot;</span>,<span class="dt">ylab=</span><span class="st">&quot;&quot;</span>,<span class="dt">ylim=</span><span class="kw">c</span>(<span class="dv">0</span>,<span class="dv">300</span>),<span class="dt">font.lab=</span><span class="dv">2</span>,
+       <span class="dt">xlab=</span><span class="kw">sprintf</span>(<span class="st">&quot;P = %.1f, Q = %d, R = %.1f, Pf = %.1f&quot;</span>,
+                    p[ir], q[ir], r[ir], pf[ir] ))
+  <span class="kw">abline</span>(<span class="dt">v=</span>p[ir],<span class="dt">col=</span><span class="st">&#39;cyan&#39;</span>);
+  <span class="kw">abline</span>(<span class="dt">h=</span><span class="kw">seq</span>(<span class="dv">50</span>,<span class="dv">250</span>,<span class="dv">50</span>),<span class="dt">lty=</span><span class="dv">3</span>,<span class="dt">col=</span><span class="st">&#39;grey&#39;</span>)
+  <span class="kw">plot</span>(p, pf, <span class="dt">type=</span><span class="st">&#39;l&#39;</span>,<span class="dt">main=</span><span class="st">&quot;Profit&quot;</span>,<span class="dt">ylab=</span><span class="st">&quot;&quot;</span>,<span class="dt">ylim=</span><span class="kw">c</span>(<span class="dv">0</span>,<span class="dv">110</span>),<span class="dt">font.lab=</span><span class="dv">2</span>,
+       <span class="dt">xlab=</span><span class="kw">sprintf</span>(<span class="st">&quot;P = %.1f, Q = %d, R = %.1f, Pf =%.1f&quot;</span>,
+                    p[ip], q[ip], r[ip], pf[ip] )  )
+  <span class="kw">abline</span>(<span class="dt">v=</span>p[ip],<span class="dt">col=</span><span class="st">&#39;pink&#39;</span>);
+  <span class="kw">abline</span>(<span class="dt">h=</span><span class="kw">seq</span>(<span class="dv">20</span>,<span class="dv">100</span>,<span class="dv">20</span>),<span class="dt">lty=</span><span class="dv">3</span>,<span class="dt">col=</span><span class="st">&#39;grey&#39;</span>)
+  <span class="kw">text</span>(<span class="fl">3.5</span>,<span class="dv">100</span>,<span class="kw">sprintf</span>(<span class="st">&quot;MC = %.1f&quot;</span>,m),<span class="dt">pos=</span><span class="dv">4</span>,<span class="dt">font=</span><span class="dv">2</span>)
+}</code></pre></div>
+<p>為了方便比較，我們把 <strong>產品效用的分佈</strong> ，和需求曲線、營收曲線、獲利曲線畫在一起</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">pd1 =<span class="st"> </span><span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">3</span>,<span class="dv">1</span>)
+ut1 =<span class="st"> </span><span class="kw">UT</span>(pd1)
+<span class="kw">par</span>(<span class="dt">mfcol=</span><span class="kw">c</span>(<span class="dv">2</span>,<span class="dv">2</span>),<span class="dt">cex=</span><span class="fl">0.7</span>,<span class="dt">mar=</span><span class="kw">c</span>(<span class="dv">5</span>,<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">3</span>))
+<span class="kw">hist</span>(ut1,-<span class="dv">5</span>:<span class="dv">13</span>,<span class="dt">main=</span><span class="st">&quot;Distribution of Utility&quot;</span>,<span class="dt">xaxt=</span><span class="st">&#39;n&#39;</span>,<span class="dt">col=</span><span class="st">&#39;gray&#39;</span>,
+     <span class="dt">border=</span><span class="st">&#39;white&#39;</span>,<span class="dt">xlab=</span><span class="st">&quot;Utility&quot;</span>,<span class="dt">ylab=</span><span class="st">&quot;&quot;</span>,<span class="dt">xlim=</span><span class="kw">c</span>(-<span class="dv">4</span>,<span class="dv">14</span>))
+<span class="kw">axis</span>(<span class="dv">1</span>,<span class="dt">at=</span><span class="kw">seq</span>(-<span class="dv">4</span>,<span class="dv">14</span>,<span class="dv">2</span>))
+<span class="kw">pqr</span>(<span class="kw">seq</span>(<span class="fl">3.5</span>,<span class="dv">11</span>,<span class="fl">0.1</span>),<span class="kw">PC</span>(pd1),ut1)</code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-16-1.png" width="614.4" style="display: block; margin: auto;" /></p>
+</div>
+<div id="sim-1-" class="section level2 unnumbered">
+<h2>SIM-1: 產品設計與定價策略</h2>
+<p>我們可以把這段程式改成一個市場模擬器 <code>sim1.R</code> :</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">source</span>(<span class="st">&quot;sim1.R&quot;</span>)</code></pre></div>
+<p class="qiz">
+根據 APW (1.5)，什麼樣的產品規格和價格，會得到最佳的獲利呢? <br> 試著使用模擬程式，找尋最佳的獲利和營收。<br> 你找出來的結果，與用APW找出來的結果是相同的嗎？<br> 這個練習的策略意涵是什麼？
+<p>
+</div>
+<div id="section-2.3" class="section level2">
+<h2><span class="header-section-number">2.3</span> 自動模擬</h2>
+<p>我們還可以寫一段程式，把所有可能的產品(3x3x3x2=54)掃過一遍，把每一個可能產品的最佳營收和獲利都找出來，放在 <code>X</code> 這個矩陣裡面。</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">pds =<span class="st"> </span><span class="kw">as.matrix</span>(<span class="kw">expand.grid</span>(<span class="dv">1</span>:<span class="dv">3</span>,<span class="dv">1</span>:<span class="dv">3</span>,<span class="dv">1</span>:<span class="dv">3</span>,<span class="dv">1</span>:<span class="dv">2</span>))
+X =<span class="st"> </span><span class="kw">t</span>(<span class="kw">apply</span>(pds, <span class="dv">1</span>, function (v) {
+  c =<span class="st"> </span><span class="kw">PC</span>(v)
+  u =<span class="st"> </span><span class="kw">UT</span>(v)
+  X =<span class="st"> </span><span class="kw">t</span>( <span class="kw">sapply</span>(<span class="kw">seq</span>(<span class="dv">3</span>,<span class="dv">10</span>,<span class="fl">0.1</span>), function (p) {
+    q =<span class="st"> </span><span class="kw">sum</span>(u &gt;<span class="st"> </span>p)
+    <span class="kw">c</span>(p, q, q *<span class="st"> </span>p, q *<span class="st"> </span>(p -<span class="st"> </span>c)) }) )
+  <span class="kw">c</span>(<span class="kw">mean</span>(u), c, X[<span class="kw">which.max</span>(X[,<span class="dv">3</span>]),], X[<span class="kw">which.max</span>(X[,<span class="dv">4</span>]),])
+}))
+X =<span class="st"> </span><span class="kw">data.frame</span>(<span class="kw">cbind</span>(pds,X))
+<span class="kw">colnames</span>(X) =<span class="st"> </span><span class="kw">c</span>(<span class="st">&#39;v1&#39;</span>,<span class="st">&#39;v2&#39;</span>,<span class="st">&#39;v3&#39;</span>,<span class="st">&#39;v4&#39;</span>,  <span class="co"># product spec</span>
+                <span class="st">&#39;ut&#39;</span>,                 <span class="co"># average utility of the product</span>
+                <span class="st">&#39;cost&#39;</span>,               <span class="co"># cost</span>
+                <span class="st">&#39;p1&#39;</span>,<span class="st">&#39;q1&#39;</span>,<span class="st">&#39;r1&#39;</span>,<span class="st">&#39;pf1&#39;</span>, <span class="co"># price, quantity, revenue, profit at max. revenue</span>
+                <span class="st">&#39;p2&#39;</span>,<span class="st">&#39;q2&#39;</span>,<span class="st">&#39;r2&#39;</span>,<span class="st">&#39;pf2&#39;</span>  <span class="co"># price, quantity, revenue, profit at max. porfit</span>
+                )</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">head</span>(X[<span class="kw">order</span>(-<span class="st"> </span>X$r1),],<span class="dv">10</span>)  <span class="co"># order X by 最佳營收</span></code></pre></div>
+<pre><code>##    v1 v2 v3 v4    ut cost  p1 q1    r1   pf1  p2 q2    r2  pf2
+## 21  3  1  3  1 5.235  4.8 5.0 62 310.0  12.4 7.0 27 189.0 59.4
+## 19  1  1  3  1 5.572  5.0 3.9 74 288.6 -81.4 9.9 13 128.7 63.7
+## 3   3  1  1  1 4.619  4.7 4.5 64 288.0 -12.8 5.8 41 237.8 45.1
+## 1   1  1  1  1 4.956  4.9 4.2 66 277.2 -46.2 7.2 23 165.6 52.9
+## 2   2  1  1  1 4.573  4.8 3.7 72 266.4 -79.2 5.7 32 182.4 28.8
+## 20  2  1  3  1 5.189  4.9 4.3 61 262.3 -36.6 8.1 16 129.6 51.2
+## 23  2  2  3  1 4.609  4.5 5.6 46 257.6  50.6 6.6 33 217.8 69.3
+## 22  1  2  3  1 4.992  4.6 4.7 54 253.8   5.4 8.2 24 196.8 86.4
+## 24  3  2  3  1 4.655  4.4 4.7 54 253.8  16.2 8.5 19 161.5 77.9
+## 46  1  1  3  2 4.751  4.7 4.3 59 253.7 -23.6 7.5 20 150.0 56.0</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">head</span>(X[<span class="kw">order</span>(-<span class="st"> </span>X$pf2),],<span class="dv">10</span>) <span class="co"># order X by 最佳獲利</span></code></pre></div>
+<pre><code>##    v1 v2 v3 v4    ut cost  p1 q1    r1   pf1  p2 q2    r2  pf2
+## 22  1  2  3  1 4.992  4.6 4.7 54 253.8   5.4 8.2 24 196.8 86.4
+## 49  1  2  3  2 4.171  4.3 5.1 47 239.7  37.6 8.9 17 151.3 78.2
+## 24  3  2  3  1 4.655  4.4 4.7 54 253.8  16.2 8.5 19 161.5 77.9
+## 51  3  2  3  2 3.833  4.1 5.2 44 228.8  48.4 7.0 25 175.0 72.5
+## 27  3  3  3  1 3.970  4.1 6.0 33 198.0  62.7 8.6 16 137.6 72.0
+## 23  2  2  3  1 4.609  4.5 5.6 46 257.6  50.6 6.6 33 217.8 69.3
+## 50  2  2  3  2 3.787  4.2 5.4 42 226.8  50.4 7.2 23 165.6 69.0
+## 54  3  3  3  2 3.149  3.8 5.6 28 156.8  50.4 6.7 23 154.1 66.7
+## 19  1  1  3  1 5.572  5.0 3.9 74 288.6 -81.4 9.9 13 128.7 63.7
+## 4   1  2  1  1 4.376  4.5 5.3 40 212.0  32.0 7.0 25 175.0 62.5</code></pre>
+</div>
+<div id="section-2.4" class="section level2">
+<h2><span class="header-section-number">2.4</span> 策略目標、策略優化</h2>
+<p>
+通常公司的目標都不只是將營收、獲利最大化這麼簡單。利用自動模擬的結果 <code>X</code>，請試著：
+</p>
+<p class="qiz">
+在不虧本的前提之下，產生最大營收
+<p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">subset</span>(X[<span class="kw">order</span>(-<span class="st"> </span>X$r1),], pf1&gt;<span class="dv">0</span>)[<span class="dv">1</span>:<span class="dv">5</span>,] </code></pre></div>
+<pre><code>##    v1 v2 v3 v4    ut cost  p1 q1    r1  pf1  p2 q2    r2  pf2
+## 21  3  1  3  1 5.235  4.8 5.0 62 310.0 12.4 7.0 27 189.0 59.4
+## 23  2  2  3  1 4.609  4.5 5.6 46 257.6 50.6 6.6 33 217.8 69.3
+## 22  1  2  3  1 4.992  4.6 4.7 54 253.8  5.4 8.2 24 196.8 86.4
+## 24  3  2  3  1 4.655  4.4 4.7 54 253.8 16.2 8.5 19 161.5 77.9
+## 49  1  2  3  2 4.171  4.3 5.1 47 239.7 37.6 8.9 17 151.3 78.2</code></pre>
+<p class="qiz">
+在滲透率大於30%的前提之下，將獲利最大化
+</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">subset</span>(X[<span class="kw">order</span>(-<span class="st"> </span>X$pf2),], q2&gt;<span class="dv">30</span>)[<span class="dv">1</span>:<span class="dv">5</span>,] </code></pre></div>
+<pre><code>##    v1 v2 v3 v4    ut cost  p1 q1    r1   pf1  p2 q2    r2  pf2
+## 23  2  2  3  1 4.609  4.5 5.6 46 257.6  50.6 6.6 33 217.8 69.3
+## 53  2  3  3  2 3.103  3.9 5.5 31 170.5  49.6 5.5 31 170.5 49.6
+## 3   3  1  1  1 4.619  4.7 4.5 64 288.0 -12.8 5.8 41 237.8 45.1
+## 5   2  2  1  1 3.993  4.4 4.6 50 230.0  10.0 5.6 32 179.2 38.4
+## 2   2  1  1  1 4.573  4.8 3.7 72 266.4 -79.2 5.7 32 182.4 28.8</code></pre>
+<p>
+現實的狀況是，你常常需要在目標不明確的狀況下做策略規劃：
+</p>
+<p class="qiz">
+請試著自己設定營運目標，找到實現這一個目標的最佳策略，<br> 然後，跟大家分享你的目標和策略，和它們背後的邏輯。<br> 最後再想看看，老闆為什麼常常不告訴你明確的目標，就叫你做策略規劃呢？
+</p>
+</div>
+<div id="section-2.5" class="section level2">
+<h2><span class="header-section-number">2.5</span> 目標的範圍、合理的策略</h2>
+<p>如果我們將 <strong>所有產品</strong> 的最佳營收和獲利一起畫在同一個平面上：</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">df =<span class="st"> </span><span class="kw">data.frame</span>(<span class="dt">revenue=</span><span class="kw">c</span>(X$r1,X$r2),<span class="dt">profit=</span><span class="kw">c</span>(X$pf1,X$pf2),
+                <span class="dt">p=</span><span class="kw">c</span>(X$p1,X$p2),<span class="dt">q=</span><span class="kw">c</span>(X$q1,X$q2),
+                <span class="dt">opt=</span><span class="kw">c</span>(<span class="kw">rep</span>(<span class="st">&#39;opt.revenue&#39;</span>,<span class="kw">nrow</span>(X)),<span class="kw">rep</span>(<span class="st">&#39;opt.profit&#39;</span>,<span class="kw">nrow</span>(X))),
+                <span class="dt">lab=</span><span class="kw">rep</span>(<span class="kw">apply</span>(X[,<span class="dv">1</span>:<span class="dv">4</span>],<span class="dv">1</span>,paste0,<span class="dt">collapse=</span><span class="st">&#39;&#39;</span>),<span class="dv">2</span>)  )
+<span class="kw">hchart</span>(df, <span class="st">&quot;scatter&quot;</span>, <span class="dt">x=</span>revenue, <span class="dt">y=</span>profit, <span class="dt">group=</span>opt, lab, p, q) %&gt;%
+<span class="st">  </span><span class="kw">hc_plotOptions</span>(<span class="dt">series=</span><span class="kw">list</span>(<span class="dt">allowPointSelect=</span>T)) %&gt;%
+<span class="st">  </span><span class="kw">hc_chart</span>(<span class="dt">zoomType =</span> <span class="st">&quot;xy&quot;</span>) %&gt;%<span class="st"> </span><span class="kw">hc_add_theme</span>(<span class="kw">hc_theme_flat</span>()) %&gt;%
+<span class="st">  </span><span class="kw">hc_tooltip</span>(<span class="dt">headerFormat =</span> <span class="st">&quot;&quot;</span>,<span class="dt">valueDecimals=</span><span class="dv">1</span>,<span class="dt">borderWidth=</span><span class="dv">2</span>,
+    <span class="dt">hideDelay=</span><span class="dv">100</span>,<span class="dt">useHTML=</span>T,<span class="dt">padding=</span><span class="dv">3</span>,
+    <span class="dt">pointFormat=</span><span class="st">&quot;&lt;center&gt;&lt;b&gt;({point.lab})&lt;/b&gt;&lt;/center&gt; price: {point.p}&lt;br&gt;</span>
+<span class="st">                 qty: {point.q}&lt;br&gt; RV: {point.x}&lt;br&gt; PF: {point.y}&quot;</span>) %&gt;%
+<span class="st">  </span><span class="kw">hc_colors</span>(<span class="kw">hex_to_rgba</span>(<span class="kw">c</span>(<span class="st">&#39;darkgreen&#39;</span>,<span class="st">&#39;orange&#39;</span>), <span class="dt">alpha =</span> <span class="fl">0.65</span>)) %&gt;%
+<span class="st">  </span><span class="kw">hc_legend</span>(<span class="dt">floating=</span>T,<span class="dt">align=</span><span class="st">&#39;left&#39;</span>,<span class="dt">verticalAlign=</span><span class="st">&#39;bottom&#39;</span>)</code></pre></div>
+<div id="htmlwidget-e137b7e26e7bbcac218f" style="width:100%;height:500px;" class="highchart html-widget"></div>
+<script type="application/json" data-for="htmlwidget-e137b7e26e7bbcac218f">{"x":{"hc_opts":{"title":{"text":null},"yAxis":{"title":{"text":"profit"},"type":"linear"},"credits":{"enabled":false},"exporting":{"enabled":false},"plotOptions":{"series":{"turboThreshold":0,"showInLegend":true,"marker":{"enabled":true},"allowPointSelect":true},"scatter":{"marker":{"symbol":"circle"}},"bubble":{"minSize":5,"maxSize":25},"treemap":{"layoutAlgorithm":"squarified"}},"series":[{"name":"opt.profit","type":"scatter","data":[{"revenue":165.6,"profit":52.9,"p":7.2,"q":23,"opt":"opt.profit","lab":"1111","x":165.6,"y":52.9},{"revenue":182.4,"profit":28.8,"p":5.7,"q":32,"opt":"opt.profit","lab":"2111","x":182.4,"y":28.8},{"revenue":237.8,"profit":45.1,"p":5.8,"q":41,"opt":"opt.profit","lab":"3111","x":237.8,"y":45.1},{"revenue":175,"profit":62.5,"p":7,"q":25,"opt":"opt.profit","lab":"1211","x":175,"y":62.5},{"revenue":179.2,"profit":38.4,"p":5.6,"q":32,"opt":"opt.profit","lab":"2211","x":179.2,"y":38.4},{"revenue":168,"profit":47.6,"p":6,"q":28,"opt":"opt.profit","lab":"3211","x":168,"y":47.6},{"revenue":148.2,"profit":39,"p":5.7,"q":26,"opt":"opt.profit","lab":"1311","x":148.2,"y":39},{"revenue":75.6,"profit":26.4,"p":6.3,"q":12,"opt":"opt.profit","lab":"2311","x":75.6,"y":26.4},{"revenue":84,"profit":28,"p":6,"q":14,"opt":"opt.profit","lab":"3311","x":84,"y":28},{"revenue":96,"profit":20.8,"p":6,"q":16,"opt":"opt.profit","lab":"1121","x":96,"y":20.8},{"revenue":47.6,"profit":15.4,"p":6.8,"q":7,"opt":"opt.profit","lab":"2121","x":47.6,"y":15.4},{"revenue":75.6,"profit":21.6,"p":6.3,"q":12,"opt":"opt.profit","lab":"3121","x":75.6,"y":21.6},{"revenue":145,"profit":37.5,"p":5.8,"q":25,"opt":"opt.profit","lab":"1221","x":145,"y":37.5},{"revenue":72.6,"profit":26.4,"p":6.6,"q":11,"opt":"opt.profit","lab":"2221","x":72.6,"y":26.4},{"revenue":55.2,"profit":22.4,"p":6.9,"q":8,"opt":"opt.profit","lab":"3221","x":55.2,"y":22.4},{"revenue":59.4,"profit":23.4,"p":6.6,"q":9,"opt":"opt.profit","lab":"1321","x":59.4,"y":23.4},{"revenue":59,"profit":20,"p":5.9,"q":10,"opt":"opt.profit","lab":"2321","x":59,"y":20},{"revenue":61,"profit":23,"p":6.1,"q":10,"opt":"opt.profit","lab":"3321","x":61,"y":23},{"revenue":128.7,"profit":63.7,"p":9.9,"q":13,"opt":"opt.profit","lab":"1131","x":128.7,"y":63.7},{"revenue":129.6,"profit":51.2,"p":8.1,"q":16,"opt":"opt.profit","lab":"2131","x":129.6,"y":51.2},{"revenue":189,"profit":59.4,"p":7,"q":27,"opt":"opt.profit","lab":"3131","x":189,"y":59.4},{"revenue":196.8,"profit":86.4,"p":8.2,"q":24,"opt":"opt.profit","lab":"1231","x":196.8,"y":86.4},{"revenue":217.8,"profit":69.3,"p":6.6,"q":33,"opt":"opt.profit","lab":"2231","x":217.8,"y":69.3},{"revenue":161.5,"profit":77.9,"p":8.5,"q":19,"opt":"opt.profit","lab":"3231","x":161.5,"y":77.9},{"revenue":144,"profit":58,"p":7.2,"q":20,"opt":"opt.profit","lab":"1331","x":144,"y":58},{"revenue":96.8,"profit":50.6,"p":8.8,"q":11,"opt":"opt.profit","lab":"2331","x":96.8,"y":50.6},{"revenue":137.6,"profit":72,"p":8.6,"q":16,"opt":"opt.profit","lab":"3331","x":137.6,"y":72},{"revenue":156.6,"profit":32.4,"p":5.8,"q":27,"opt":"opt.profit","lab":"1112","x":156.6,"y":32.4},{"revenue":97.6,"profit":25.6,"p":6.1,"q":16,"opt":"opt.profit","lab":"2112","x":97.6,"y":25.6},{"revenue":91,"profit":33.8,"p":7,"q":13,"opt":"opt.profit","lab":"3112","x":91,"y":33.8},{"revenue":117.8,"profit":38,"p":6.2,"q":19,"opt":"opt.profit","lab":"1212","x":117.8,"y":38},{"revenue":108,"profit":34.2,"p":6,"q":18,"opt":"opt.profit","lab":"2212","x":108,"y":34.2},{"revenue":91.8,"profit":23.8,"p":5.4,"q":17,"opt":"opt.profit","lab":"3212","x":91.8,"y":23.8},{"revenue":86.9,"profit":44,"p":7.9,"q":11,"opt":"opt.profit","lab":"1312","x":86.9,"y":44},{"revenue":78.1,"profit":36.3,"p":7.1,"q":11,"opt":"opt.profit","lab":"2312","x":78.1,"y":36.3},{"revenue":79.2,"profit":38.5,"p":7.2,"q":11,"opt":"opt.profit","lab":"3312","x":79.2,"y":38.5},{"revenue":44.4,"profit":18,"p":7.4,"q":6,"opt":"opt.profit","lab":"1122","x":44.4,"y":18},{"revenue":52.8,"profit":18.4,"p":6.6,"q":8,"opt":"opt.profit","lab":"2122","x":52.8,"y":18.4},{"revenue":99.2,"profit":32,"p":6.2,"q":16,"opt":"opt.profit","lab":"3122","x":99.2,"y":32},{"revenue":119.7,"profit":35.7,"p":5.7,"q":21,"opt":"opt.profit","lab":"1222","x":119.7,"y":35.7},{"revenue":74.8,"profit":31.9,"p":6.8,"q":11,"opt":"opt.profit","lab":"2222","x":74.8,"y":31.9},{"revenue":69.3,"profit":27.5,"p":6.3,"q":11,"opt":"opt.profit","lab":"3222","x":69.3,"y":27.5},{"revenue":78.1,"profit":37.4,"p":7.1,"q":11,"opt":"opt.profit","lab":"1322","x":78.1,"y":37.4},{"revenue":67,"profit":31,"p":6.7,"q":10,"opt":"opt.profit","lab":"2322","x":67,"y":31},{"revenue":64.9,"profit":26.4,"p":5.9,"q":11,"opt":"opt.profit","lab":"3322","x":64.9,"y":26.4},{"revenue":150,"profit":56,"p":7.5,"q":20,"opt":"opt.profit","lab":"1132","x":150,"y":56},{"revenue":117,"profit":48,"p":7.8,"q":15,"opt":"opt.profit","lab":"2132","x":117,"y":48},{"revenue":160.6,"profit":61.6,"p":7.3,"q":22,"opt":"opt.profit","lab":"3132","x":160.6,"y":61.6},{"revenue":151.3,"profit":78.2,"p":8.9,"q":17,"opt":"opt.profit","lab":"1232","x":151.3,"y":78.2},{"revenue":165.6,"profit":69,"p":7.2,"q":23,"opt":"opt.profit","lab":"2232","x":165.6,"y":69},{"revenue":175,"profit":72.5,"p":7,"q":25,"opt":"opt.profit","lab":"3232","x":175,"y":72.5},{"revenue":160,"profit":60,"p":6.4,"q":25,"opt":"opt.profit","lab":"1332","x":160,"y":60},{"revenue":170.5,"profit":49.6,"p":5.5,"q":31,"opt":"opt.profit","lab":"2332","x":170.5,"y":49.6},{"revenue":154.1,"profit":66.7,"p":6.7,"q":23,"opt":"opt.profit","lab":"3332","x":154.1,"y":66.7}]},{"name":"opt.revenue","type":"scatter","data":[{"revenue":277.2,"profit":-46.2,"p":4.2,"q":66,"opt":"opt.revenue","lab":"1111","x":277.2,"y":-46.2},{"revenue":266.4,"profit":-79.2,"p":3.7,"q":72,"opt":"opt.revenue","lab":"2111","x":266.4,"y":-79.2},{"revenue":288,"profit":-12.8,"p":4.5,"q":64,"opt":"opt.revenue","lab":"3111","x":288,"y":-12.8},{"revenue":212,"profit":32,"p":5.3,"q":40,"opt":"opt.revenue","lab":"1211","x":212,"y":32},{"revenue":230,"profit":9.99999999999996,"p":4.6,"q":50,"opt":"opt.revenue","lab":"2211","x":230,"y":9.99999999999996},{"revenue":218.3,"profit":-35.4,"p":3.7,"q":59,"opt":"opt.revenue","lab":"3211","x":218.3,"y":-35.4},{"revenue":183,"profit":-73.2,"p":3,"q":61,"opt":"opt.revenue","lab":"1311","x":183,"y":-73.2},{"revenue":171.6,"profit":-8.79999999999999,"p":3.9,"q":44,"opt":"opt.revenue","lab":"2311","x":171.6,"y":-8.79999999999999},{"revenue":198.9,"profit":-5.1,"p":3.9,"q":51,"opt":"opt.revenue","lab":"3311","x":198.9,"y":-5.1},{"revenue":230.4,"profit":-108,"p":3.2,"q":72,"opt":"opt.revenue","lab":"1121","x":230.4,"y":-108},{"revenue":208.8,"profit":-58,"p":3.6,"q":58,"opt":"opt.revenue","lab":"2121","x":208.8,"y":-58},{"revenue":221,"profit":-71.5,"p":3.4,"q":65,"opt":"opt.revenue","lab":"3121","x":221,"y":-71.5},{"revenue":208,"profit":36,"p":5.2,"q":40,"opt":"opt.revenue","lab":"1221","x":208,"y":36},{"revenue":164.5,"profit":-32.9,"p":3.5,"q":47,"opt":"opt.revenue","lab":"2221","x":164.5,"y":-32.9},{"revenue":156.8,"profit":-44.1,"p":3.2,"q":49,"opt":"opt.revenue","lab":"3221","x":156.8,"y":-44.1},{"revenue":123,"profit":-41,"p":3,"q":41,"opt":"opt.revenue","lab":"1321","x":123,"y":-41},{"revenue":111.6,"profit":-28.8,"p":3.1,"q":36,"opt":"opt.revenue","lab":"2321","x":111.6,"y":-28.8},{"revenue":135,"profit":-36,"p":3,"q":45,"opt":"opt.revenue","lab":"3321","x":135,"y":-36},{"revenue":288.6,"profit":-81.4,"p":3.9,"q":74,"opt":"opt.revenue","lab":"1131","x":288.6,"y":-81.4},{"revenue":262.3,"profit":-36.6,"p":4.3,"q":61,"opt":"opt.revenue","lab":"2131","x":262.3,"y":-36.6},{"revenue":310,"profit":12.4,"p":5,"q":62,"opt":"opt.revenue","lab":"3131","x":310,"y":12.4},{"revenue":253.8,"profit":5.40000000000003,"p":4.7,"q":54,"opt":"opt.revenue","lab":"1231","x":253.8,"y":5.40000000000003},{"revenue":257.6,"profit":50.6,"p":5.6,"q":46,"opt":"opt.revenue","lab":"2231","x":257.6,"y":50.6},{"revenue":253.8,"profit":16.2,"p":4.7,"q":54,"opt":"opt.revenue","lab":"3231","x":253.8,"y":16.2},{"revenue":213.5,"profit":-48.8,"p":3.5,"q":61,"opt":"opt.revenue","lab":"1331","x":213.5,"y":-48.8},{"revenue":193.2,"profit":0,"p":4.2,"q":46,"opt":"opt.revenue","lab":"2331","x":193.2,"y":0},{"revenue":198,"profit":62.7,"p":6,"q":33,"opt":"opt.revenue","lab":"3331","x":198,"y":62.7},{"revenue":217.6,"profit":-95.2,"p":3.2,"q":68,"opt":"opt.revenue","lab":"1112","x":217.6,"y":-95.2},{"revenue":180,"profit":-22.5,"p":4,"q":45,"opt":"opt.revenue","lab":"2112","x":180,"y":-22.5},{"revenue":183,"profit":-85.4,"p":3,"q":61,"opt":"opt.revenue","lab":"3112","x":183,"y":-85.4},{"revenue":196,"profit":-9.80000000000001,"p":4,"q":49,"opt":"opt.revenue","lab":"1212","x":196,"y":-9.80000000000001},{"revenue":152,"profit":-3.79999999999999,"p":4,"q":38,"opt":"opt.revenue","lab":"2212","x":152,"y":-3.79999999999999},{"revenue":186,"profit":-62,"p":3,"q":62,"opt":"opt.revenue","lab":"3212","x":186,"y":-62},{"revenue":111,"profit":-33.3,"p":3,"q":37,"opt":"opt.revenue","lab":"1312","x":111,"y":-33.3},{"revenue":95.2,"profit":-11.2,"p":3.4,"q":28,"opt":"opt.revenue","lab":"2312","x":95.2,"y":-11.2},{"revenue":119,"profit":-6.80000000000001,"p":3.5,"q":34,"opt":"opt.revenue","lab":"3312","x":119,"y":-6.80000000000001},{"revenue":173.6,"profit":-72.8,"p":3.1,"q":56,"opt":"opt.revenue","lab":"1122","x":173.6,"y":-72.8},{"revenue":145.2,"profit":-44,"p":3.3,"q":44,"opt":"opt.revenue","lab":"2122","x":145.2,"y":-44},{"revenue":125.4,"profit":-34.2,"p":3.3,"q":38,"opt":"opt.revenue","lab":"3122","x":125.4,"y":-34.2},{"revenue":127.1,"profit":-36.9,"p":3.1,"q":41,"opt":"opt.revenue","lab":"1222","x":127.1,"y":-36.9},{"revenue":122.4,"profit":-10.2,"p":3.6,"q":34,"opt":"opt.revenue","lab":"2222","x":122.4,"y":-10.2},{"revenue":102.4,"profit":-19.2,"p":3.2,"q":32,"opt":"opt.revenue","lab":"3222","x":102.4,"y":-19.2},{"revenue":82.5,"profit":27,"p":5.5,"q":15,"opt":"opt.revenue","lab":"1322","x":82.5,"y":27},{"revenue":92.4,"profit":16.8,"p":4.4,"q":21,"opt":"opt.revenue","lab":"2322","x":92.4,"y":16.8},{"revenue":81.7,"profit":15.2,"p":4.3,"q":19,"opt":"opt.revenue","lab":"3322","x":81.7,"y":15.2},{"revenue":253.7,"profit":-23.6,"p":4.3,"q":59,"opt":"opt.revenue","lab":"1132","x":253.7,"y":-23.6},{"revenue":238,"profit":-74.8,"p":3.5,"q":68,"opt":"opt.revenue","lab":"2132","x":238,"y":-74.8},{"revenue":243.6,"profit":-17.4,"p":4.2,"q":58,"opt":"opt.revenue","lab":"3132","x":243.6,"y":-17.4},{"revenue":239.7,"profit":37.6,"p":5.1,"q":47,"opt":"opt.revenue","lab":"1232","x":239.7,"y":37.6},{"revenue":226.8,"profit":50.4,"p":5.4,"q":42,"opt":"opt.revenue","lab":"2232","x":226.8,"y":50.4},{"revenue":228.8,"profit":48.4,"p":5.2,"q":44,"opt":"opt.revenue","lab":"3232","x":228.8,"y":48.4},{"revenue":197.6,"profit":45.6,"p":5.2,"q":38,"opt":"opt.revenue","lab":"1332","x":197.6,"y":45.6},{"revenue":170.5,"profit":49.6,"p":5.5,"q":31,"opt":"opt.revenue","lab":"2332","x":170.5,"y":49.6},{"revenue":156.8,"profit":50.4,"p":5.6,"q":28,"opt":"opt.revenue","lab":"3332","x":156.8,"y":50.4}]}],"xAxis":{"type":"linear","title":{"text":"revenue"},"categories":null},"chart":{"zoomType":"xy"},"tooltip":{"headerFormat":"","valueDecimals":1,"borderWidth":2,"hideDelay":100,"useHTML":true,"padding":3,"pointFormat":"<center><b>({point.lab})\u003c/b>\u003c/center> price: {point.p}<br>\n                 qty: {point.q}<br> RV: {point.x}<br> PF: {point.y}"},"colors":["rgba(0,100,0,0.65)","rgba(255,165,0,0.65)"],"legend":{"floating":true,"align":"left","verticalAlign":"bottom"}},"theme":{"colors":["#f1c40f","#2ecc71","#9b59b6","#e74c3c","#34495e","#3498db","#1abc9c","#f39c12","#d35400"],"chart":{"backgroundColor":"#ECF0F1"},"xAxis":{"gridLineDashStyle":"Dash","gridLineWidth":1,"gridLineColor":"#BDC3C7","lineColor":"#BDC3C7","minorGridLineColor":"#BDC3C7","tickColor":"#BDC3C7","tickWidth":1},"yAxis":{"gridLineDashStyle":"Dash","gridLineColor":"#BDC3C7","lineColor":"#BDC3C7","minorGridLineColor":"#BDC3C7","tickColor":"#BDC3C7","tickWidth":1},"legendBackgroundColor":"rgba(0, 0, 0, 0.5)","background2":"#505053","dataLabelsColor":"#B0B0B3","textColor":"#34495e","contrastTextColor":"#F0F0F3","maskColor":"rgba(255,255,255,0.3)"},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","drillUpText":"Back to {series.name}","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"thousandsSep":" ","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":[],"debug":false},"evals":[],"jsHooks":[]}</script> <br>
+<p class="qiz">
+根據這個圖：<br>   請大家檢討一下你們的策略，你會想要調整你的策略嗎？如何調整呢？<br>   在多重目標的情境之下，什麼樣的策略才是合理的策略？合理的策略要有什麼條件呢？<br>   你可以圖中辨識出哪一些是產品是「合理」的嗎？
+</p>
+<p><br></p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="conjoint.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="segment.html" class="navigation navigation-next " aria-label="Next page""><i class="fa fa-angle-right"></i></a>
+
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"facebook": true,
+"twitter": true,
+"google": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    if (location.protocol !== "file:" && /^https?:/.test(script.src))
+      script.src  = script.src.replace(/^https?:/, '');
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

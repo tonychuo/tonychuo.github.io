@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>聯合分析與行銷策略</title>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+  <meta name="description" content="聯合分析與行銷策略">
+  <meta name="generator" content="bookdown 0.1 and GitBook 2.6.7">
+
+  <meta property="og:title" content="聯合分析與行銷策略" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="聯合分析與行銷策略" />
+  
+  
+  
+
+<meta name="author" content="Tony Chuo, tonychuo@gmail.com">
+
+<meta name="date" content="2016-10-18">
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="index.html">
+<link rel="next" href="newProd.html">
+
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+<script src="libs/htmlwidgets-0.7/htmlwidgets.js"></script>
+<script src="libs/amcharts-3.20.10/amcharts.js"></script>
+<script src="libs/ramcharts_base-binding-2.1.1/ramcharts_base.js"></script>
+<script src="libs/amcharts_type_pie-3.20.10/pie.js"></script>
+<script src="libs/underscore-1.8.3/underscore-min.js"></script>
+<link href="libs/highcharts-4.2.4/css/motion.css" rel="stylesheet" />
+<script src="libs/highcharts-4.2.4/highstock.js"></script>
+<script src="libs/highcharts-4.2.4/highcharts-more.js"></script>
+<script src="libs/highcharts-4.2.4/highcharts-3d.js"></script>
+<script src="libs/highcharts-4.2.4/modules/exporting.js"></script>
+<script src="libs/highcharts-4.2.4/modules/drilldown.js"></script>
+<script src="libs/highcharts-4.2.4/modules/data.js"></script>
+<script src="libs/highcharts-4.2.4/modules/heatmap.js"></script>
+<script src="libs/highcharts-4.2.4/modules/map.js"></script>
+<script src="libs/highcharts-4.2.4/modules/treemap.js"></script>
+<script src="libs/highcharts-4.2.4/modules/funnel.js"></script>
+<script src="libs/highcharts-4.2.4/modules/solid-gauge.js"></script>
+<script src="libs/highcharts-4.2.4/modules/reset.js"></script>
+<script src="libs/highcharts-4.2.4/plugins/annotations.js"></script>
+<script src="libs/highcharts-4.2.4/plugins/motion.js"></script>
+<script src="libs/highcharts-4.2.4/plugins/draggable-points.js"></script>
+<script src="libs/highcharts-4.2.4/plugins/pattern-fill-v2.js"></script>
+<script src="libs/highcharts-4.2.4/plugins/text-symbols.js"></script>
+<script src="libs/highcharts-4.2.4/plugins/symbols-extra.js"></script>
+<link href="libs/fontawesome-4.5.0/font-awesome.min.css" rel="stylesheet" />
+<link href="libs/htmlwdgtgrid-1/htmlwdgtgrid.css" rel="stylesheet" />
+<script src="libs/highchart-binding-0.4.0/highchart.js"></script>
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="http://msrc.cm.nsysu.edu.tw/files/14-1135-157765,r1143-1.php" target="blank">
+<img src="bm.png" alt="聯合分析與行銷策略" style="width:250px;height:60px"></a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>前言</a><ul>
+<li><a href="index.html#--"><strong>課程需求</strong> 與 <strong>課前準備</strong></a></li>
+<li><a href="index.html#3c7374726f6e673ee881afe59088e58886e69e90e7b0a1e4bb8b3c2f7374726f6e673e"><strong>聯合分析簡介</strong></a></li>
+<li><a href="index.html#3c7374726f6e673ee8aab2e7a88be585a7e5aeb9e7b0a1e4bb8b3c2f7374726f6e673e"><strong>課程內容簡介</strong></a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="conjoint.html"><a href="conjoint.html"><i class="fa fa-check"></i><b>1</b> 聯合分析</a><ul>
+<li class="chapter" data-level="1.1" data-path="conjoint.html"><a href="conjoint.html#section-1.1"><i class="fa fa-check"></i><b>1.1</b> 案例資料</a></li>
+<li class="chapter" data-level="1.2" data-path="conjoint.html"><a href="conjoint.html#section-1.2"><i class="fa fa-check"></i><b>1.2</b> 屬性的重要性</a></li>
+<li class="chapter" data-level="1.3" data-path="conjoint.html"><a href="conjoint.html#-apw"><i class="fa fa-check"></i><b>1.3</b> 選項的平均價值 (APW)</a></li>
+<li class="chapter" data-level="1.4" data-path="conjoint.html"><a href="conjoint.html#section-1.4"><i class="fa fa-check"></i><b>1.4</b> 受測群體的平均喜好</a></li>
+<li class="chapter" data-level="1.5" data-path="conjoint.html"><a href="conjoint.html#section-1.5"><i class="fa fa-check"></i><b>1.5</b> 個人的喜好差異</a></li>
+<li class="chapter" data-level="1.6" data-path="conjoint.html"><a href="conjoint.html#section-1.6"><i class="fa fa-check"></i><b>1.6</b> 效用函數</a></li>
+<li class="chapter" data-level="1.7" data-path="conjoint.html"><a href="conjoint.html#section-1.7"><i class="fa fa-check"></i><b>1.7</b> 市占率</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="newProd.html"><a href="newProd.html"><i class="fa fa-check"></i><b>2</b> 產品設計與定價策略</a><ul>
+<li class="chapter" data-level="2.1" data-path="newProd.html"><a href="newProd.html#section-2.1"><i class="fa fa-check"></i><b>2.1</b> 成本函數</a></li>
+<li class="chapter" data-level="2.2" data-path="newProd.html"><a href="newProd.html#section-2.2"><i class="fa fa-check"></i><b>2.2</b> 價量關係、營收、獲利</a></li>
+<li class="chapter" data-level="" data-path="newProd.html"><a href="newProd.html#sim-1-"><i class="fa fa-check"></i>SIM-1: 產品設計與定價策略</a></li>
+<li class="chapter" data-level="2.3" data-path="newProd.html"><a href="newProd.html#section-2.3"><i class="fa fa-check"></i><b>2.3</b> 自動模擬</a></li>
+<li class="chapter" data-level="2.4" data-path="newProd.html"><a href="newProd.html#section-2.4"><i class="fa fa-check"></i><b>2.4</b> 策略目標、策略優化</a></li>
+<li class="chapter" data-level="2.5" data-path="newProd.html"><a href="newProd.html#section-2.5"><i class="fa fa-check"></i><b>2.5</b> 目標的範圍、合理的策略</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="segment.html"><a href="segment.html"><i class="fa fa-check"></i><b>3</b> 族群分析與市場區隔</a><ul>
+<li class="chapter" data-level="3.1" data-path="segment.html"><a href="segment.html#-k-means"><i class="fa fa-check"></i><b>3.1</b> 族群分析 (K-means)</a></li>
+<li class="chapter" data-level="3.2" data-path="segment.html"><a href="segment.html#average-part-worth-per-segment-apwps"><i class="fa fa-check"></i><b>3.2</b> Average Part Worth per Segment (APWPS)</a></li>
+<li class="chapter" data-level="" data-path="segment.html"><a href="segment.html#sim-2-"><i class="fa fa-check"></i>SIM-2: 族群分析與市場區隔</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="twoProd.html"><a href="twoProd.html"><i class="fa fa-check"></i><b>4</b> 雙產品市場</a><ul>
+<li class="chapter" data-level="4.1" data-path="twoProd.html"><a href="twoProd.html#section-4.1"><i class="fa fa-check"></i><b>4.1</b> 價量關係</a></li>
+<li class="chapter" data-level="" data-path="twoProd.html"><a href="twoProd.html#sim-3-"><i class="fa fa-check"></i>SIM-3: 雙產品市場模擬</a></li>
+<li class="chapter" data-level="4.2" data-path="twoProd.html"><a href="twoProd.html#section-4.2"><i class="fa fa-check"></i><b>4.2</b> 競爭策略</a></li>
+<li class="chapter" data-level="4.3" data-path="twoProd.html"><a href="twoProd.html#section-4.3"><i class="fa fa-check"></i><b>4.3</b> 產品線規劃</a></li>
+<li class="chapter" data-level="4.4" data-path="twoProd.html"><a href="twoProd.html#-1"><i class="fa fa-check"></i><b>4.4</b> 自動模擬</a><ul>
+<li class="chapter" data-level="4.4.1" data-path="twoProd.html"><a href="twoProd.html#section-4.4.1"><i class="fa fa-check"></i><b>4.4.1</b> 價格空間</a></li>
+<li class="chapter" data-level="4.4.2" data-path="twoProd.html"><a href="twoProd.html#section-4.4.2"><i class="fa fa-check"></i><b>4.4.2</b> 產品組合</a></li>
+<li class="chapter" data-level="4.4.3" data-path="twoProd.html"><a href="twoProd.html#section-4.4.3"><i class="fa fa-check"></i><b>4.4.3</b> 模擬結果</a></li>
+</ul></li>
+<li class="chapter" data-level="4.5" data-path="twoProd.html"><a href="twoProd.html#section-4.5"><i class="fa fa-check"></i><b>4.5</b> 產品差異的重要性</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="mLogit.html"><a href="mLogit.html"><i class="fa fa-check"></i><b>5</b> A mLogit CBC Example</a><ul>
+<li class="chapter" data-level="5.1" data-path="mLogit.html"><a href="mLogit.html#the-tv-dataset"><i class="fa fa-check"></i><b>5.1</b> The TV Dataset</a></li>
+<li class="chapter" data-level="5.2" data-path="mLogit.html"><a href="mLogit.html#multinominal-logit-model"><i class="fa fa-check"></i><b>5.2</b> Multinominal Logit Model</a></li>
+<li class="chapter" data-level="5.3" data-path="mLogit.html"><a href="mLogit.html#regression-interpolation-of-price-coefficients"><i class="fa fa-check"></i><b>5.3</b> Regression (Interpolation) of Price Coefficients</a></li>
+<li class="chapter" data-level="5.4" data-path="mLogit.html"><a href="mLogit.html#market-simulation"><i class="fa fa-check"></i><b>5.4</b> Market Simulation</a></li>
+<li class="chapter" data-level="" data-path="mLogit.html"><a href="mLogit.html#quiz-6-"><i class="fa fa-check"></i>QUIZ-6 市占率與價格彈性</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="http://www.cm.nsysu.edu.tw/bin/home.php" target="blank">
+中山大學管理學院</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">聯合分析與行銷策略</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="conjoint" class="section level1">
+<h1><span class="header-section-number">1</span> 聯合分析</h1>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(conjoint)
+<span class="kw">library</span>(fpc)
+<span class="kw">library</span>(grDevices)
+<span class="kw">library</span>(latex2exp)
+<span class="kw">library</span>(manipulate)
+<span class="kw">library</span>(rAmCharts)
+<span class="kw">library</span>(highcharter)
+<span class="kw">rm</span>(<span class="dt">list=</span><span class="kw">ls</span>(<span class="dt">all=</span><span class="ot">TRUE</span>))
+<span class="kw">options</span>(<span class="dt">digits=</span><span class="dv">4</span>); par0 =<span class="st"> </span><span class="kw">par</span>(<span class="dt">cex=</span><span class="fl">0.8</span>)</code></pre></div>
+<div id="section-1.1" class="section level2">
+<h2><span class="header-section-number">1.1</span> 案例資料</h2>
+<p>這是一個茶包的產品設計案例，在這個品項的4個主要 <strong>屬性(Attribute)</strong> 裡面，</p>
+<ul>
+<li>bitter: low, medium, high</li>
+<li>veriety: black, green, red</li>
+<li>kind: bag, granu, lefty</li>
+<li>aroma: yes, no</li>
+</ul>
+<p>一共有11個 <strong>選項(Levels)</strong> ：</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">levels =<span class="st">   </span><span class="kw">read.csv</span>(<span class="st">&quot;../tea/levels.csv&quot;</span>,<span class="dt">stringsAsFactors=</span>F)
+levels</code></pre></div>
+<pre><code>##    levels
+## 1     low
+## 2  medium
+## 3    high
+## 4   black
+## 5   green
+## 6     red
+## 7    bags
+## 8   granu
+## 9   leafy
+## 10    yes
+## 11     no</code></pre>
+<p>從這些設計選項之中研究人員設計出13張 <strong>卡片(Profiles)</strong> ：</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">profiles =<span class="st"> </span><span class="kw">read.csv</span>(<span class="st">&quot;../tea/profiles.csv&quot;</span>)
+profiles</code></pre></div>
+<pre><code>##    bitter variety kind aroma
+## 1       3       1    1     1
+## 2       1       2    1     1
+## 3       2       2    2     1
+## 4       2       1    3     1
+## 5       3       3    3     1
+## 6       2       1    1     2
+## 7       3       2    1     2
+## 8       2       3    1     2
+## 9       3       1    2     2
+## 10      1       3    2     2
+## 11      1       1    3     2
+## 12      2       2    3     2
+## 13      3       2    3     2</code></pre>
+<p>並邀請100位 <strong>受測者(Respondents)</strong> ， 請每一個人(依不同的卡片順序)對 <strong>每一張卡片(Full-Profile)</strong> 做 <strong>評分(Rating)</strong></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">ratings =<span class="st">  </span><span class="kw">read.csv</span>(<span class="st">&quot;../tea/ratings.csv&quot;</span>)
+<span class="kw">dim</span>(ratings); <span class="kw">head</span>(ratings)</code></pre></div>
+<pre><code>## [1] 100  13</code></pre>
+<pre><code>##   prof1 prof2 prof3 prof4 prof5 prof6 prof7 prof8 prof9 prof10 prof11 prof12 prof13
+## 1     8     1     1     3     9     2     7     2     2      2      2      3      4
+## 2     0    10     3     5     1     4     8     6     2      9      7      5      2
+## 3     4    10     3     5     4     1     2     0     0      1      8      9      7
+## 4     6     7     4     9     6     3     7     4     8      5      2     10      9
+## 5     5     1     7     8     6    10     7    10     6      6      6     10      7
+## 6    10     1     1     5     1     0     0     0     0      0      0      1      1</code></pre>
+<p>Make some auxilary data to assist plotting</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">col1 =<span class="st"> </span><span class="kw">c</span>(<span class="st">&#39;magenta&#39;</span>,<span class="st">&#39;steelblue&#39;</span>,<span class="st">&#39;orange&#39;</span>,<span class="st">&#39;green3&#39;</span>,<span class="st">&#39;brown&#39;</span>)
+(<span class="dt">att =</span> <span class="kw">apply</span>(profiles,<span class="dv">2</span>,max) )</code></pre></div>
+<pre><code>##  bitter variety    kind   aroma 
+##       3       3       3       2</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">(<span class="dt">attl =</span> <span class="kw">unlist</span>(<span class="kw">sapply</span>(<span class="dv">1</span>:<span class="kw">length</span>(att), function(x) <span class="kw">rep</span>(x , att[x]))) )</code></pre></div>
+<pre><code>##  [1] 1 1 1 2 2 2 3 3 3 4 4</code></pre>
+</div>
+<div id="section-1.2" class="section level2">
+<h2><span class="header-section-number">1.2</span> 屬性的重要性</h2>
+<p>計算各產品屬性的相對重要性</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">im =<span class="st"> </span><span class="kw">caImportance</span>(<span class="dt">y=</span>ratings, <span class="dt">x=</span>profiles)
+<span class="kw">names</span>(im) =<span class="st"> </span><span class="kw">names</span>(att)
+im</code></pre></div>
+<pre><code>##  bitter variety    kind   aroma 
+##   24.76   32.22   27.15   15.88</code></pre>
+</div>
+<div id="-apw" class="section level2">
+<h2><span class="header-section-number">1.3</span> 選項的平均價值 (APW)</h2>
+<p>計算各設計選項的平均價值 APW (Average Part Worth):</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">apw =<span class="st"> </span><span class="kw">caUtilities</span>(<span class="dt">y=</span>ratings, <span class="dt">x=</span>profiles, <span class="dt">z=</span>levels)</code></pre></div>
+<pre><code>## 
+## Call:
+## lm(formula = frml)
+## 
+## Residuals:
+##    Min     1Q Median     3Q    Max 
+## -5,189 -2,376 -0,751  2,213  7,513 
+## 
+## Coefficients:
+##                    Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept)          3,5534     0,0907   39,18  &lt; 2e-16 ***
+## factor(x$bitter)1    0,2402     0,1325    1,81     0,07 .  
+## factor(x$bitter)2   -0,1431     0,1149   -1,25     0,21    
+## factor(x$variety)1   0,6149     0,1149    5,35  1,0e-07 ***
+## factor(x$variety)2   0,0349     0,1149    0,30     0,76    
+## factor(x$kind)1      0,1369     0,1149    1,19     0,23    
+## factor(x$kind)2     -0,8898     0,1325   -6,72  2,8e-11 ***
+## factor(x$aroma)1     0,4108     0,0849    4,84  1,5e-06 ***
+## ---
+## Signif. codes:  0 &#39;***&#39; 0,001 &#39;**&#39; 0,01 &#39;*&#39; 0,05 &#39;.&#39; 0,1 &#39; &#39; 1
+## 
+## Residual standard error: 2,97 on 1292 degrees of freedom
+## Multiple R-squared:  0,09,   Adjusted R-squared:  0,0851 
+## F-statistic: 18,3 on 7 and 1292 DF,  p-value: &lt;2e-16</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">names</span>(apw) =<span class="st"> </span><span class="kw">c</span>(<span class="st">&#39;intercept&#39;</span>, levels[,<span class="dv">1</span>])
+apw</code></pre></div>
+<pre><code>## intercept       low    medium      high     black     green       red      bags     granu 
+##   3.55336   0.24023  -0.14311  -0.09711   0.61489   0.03489  -0.64977   0.13689  -0.88977 
+##     leafy       yes        no 
+##   0.75289   0.41078  -0.41078</code></pre>
+<p class="qiz">
+這看起來很像線性迴歸，不過… <br>   你可以看出它對各屬性選項的估值，和一般線性迴歸有什麼不同嗎？
+</p>
+</div>
+<div id="section-1.4" class="section level2">
+<h2><span class="header-section-number">1.4</span> 受測群體的平均喜好</h2>
+<p>把平均的屬性重要性和選項價值畫在一起</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">par</span>(<span class="dt">mfcol=</span><span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">2</span>),<span class="dt">cex=</span>.<span class="dv">8</span>)
+<span class="kw">barplot</span>(im,<span class="dt">las=</span><span class="dv">2</span>,<span class="dt">col=</span><span class="dv">1</span>:<span class="kw">length</span>(im),<span class="dt">main=</span><span class="st">&quot;Attribute Importance&quot;</span>)
+<span class="kw">barplot</span>(apw[<span class="dv">2</span>:<span class="kw">length</span>(apw)],<span class="dt">las=</span><span class="dv">2</span>,<span class="dt">col=</span>attl,<span class="dt">main=</span><span class="st">&quot;Average Part Worths (utils)&quot;</span>)</code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-9-1.png" width="768" style="display: block; margin: auto;" /></p>
+<p class="qiz">
+跟據這些資訊，你可以設計出最受歡營的產品嗎？<br> 假設產品的效用可以反映消費者的願付價格，哪一個產品可以帶來最大的營收？<br> 帶來最大的營收的產品也會帶來最大的獲利嗎？<br> 除了產品規格，還有什麼因素會影響營收和獲利呢？
+</p>
+</div>
+<div id="section-1.5" class="section level2">
+<h2><span class="header-section-number">1.5</span> 個人的喜好差異</h2>
+<p>聯合分析的重點不在於 <strong>群體的平均</strong> ，而在於 <strong>個人的差異</strong>。 聯合分析模型裡面會有每一位受測者的 <strong>選項價值係數</strong> (part worth coef.)。</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">W =<span class="st"> </span><span class="kw">caPartUtilities</span>(<span class="dt">y=</span>ratings, <span class="dt">x=</span>profiles, <span class="dt">z=</span>levels)
+<span class="kw">head</span>(W)</code></pre></div>
+<pre><code>##      intercept    low medium   high  black  green    red   bags  granu  leafy    yes     no
+## [1,]     3.394 -1.517 -1.141  2.659 -0.475 -0.675  1.149  0.659 -1.517  0.859  0.629 -0.629
+## [2,]     5.049  3.391 -0.695 -2.695 -1.029  0.971  0.057  1.105 -0.609 -0.495 -0.681  0.681
+## [3,]     4.029  2.563 -1.182 -1.382 -0.248  2.352 -2.103 -0.382 -2.437  2.818  0.776 -0.776
+## [4,]     5.856 -1.149 -0.025  1.175 -0.492  1.308 -0.816 -0.825 -0.149  0.975  0.121 -0.121
+## [5,]     6.250 -2.333  2.567 -0.233 -0.033 -0.633  0.667 -0.233 -0.333  0.567 -1.250  1.250
+## [6,]     1.578 -0.713 -0.144  0.856  1.456 -0.744 -0.713  0.656 -0.713  0.056  1.595 -1.595</code></pre>
+<p>將產品選項的價值係數加起來就是該產品對某一受測者的價值(效用)。若產品 <span class="math inline">\(K\)</span> 的規格為 <span class="math inline">\(c(k_1,k_2,k_3,k_4)\)</span> ，它對受測者 <span class="math inline">\(i\)</span> 的效用就是： <span class="math display">\[
+u_{i,K} = W [i,1] + \sum_{j=1}^4 W[i, k_j]
+\]</span> 例如，<code>(low,black,lefty,yes)</code>這個產品對第6位受測者的效用是： <span class="math display">\[
+u_{6,(low,black,lefty,yes)}=1.568-0.713+1.456+0.056+1.595=3.962
+\]</span></p>
+</div>
+<div id="section-1.6" class="section level2">
+<h2><span class="header-section-number">1.6</span> 效用函數</h2>
+<p class="qiz">
+給定一個產品，比方說<code>c(1,2,1,2)</code>，你要如何計算這個產品對這100位受測者的效用呢？
+</p>
+<p>我們可以定義一個 <strong>效用函數</strong> <code>UT(pd)</code>，用來計算產品<code>pd</code>對(100個)受測者的價值</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">UT =<span class="st"> </span>function(v) <span class="kw">rowSums</span>(W[, <span class="kw">c</span>(<span class="dv">1</span>, v +<span class="st"> </span><span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">4</span>,<span class="dv">7</span>,<span class="dv">10</span>))])
+<span class="kw">UT</span>(<span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">1</span>,<span class="dv">2</span>))</code></pre></div>
+<pre><code>##   [1]  1.232 11.197  7.786  5.069  4.301 -0.818  0.754  4.065  3.338  3.980  4.379  4.548
+##  [13]  1.107 -1.124  0.229  1.239  6.317  0.525  4.307  0.007  4.607  6.221  0.418  3.741
+##  [25]  8.318  1.232 11.197  7.266  5.069  4.301 -0.818  0.754  4.065  3.338  4.113  4.332
+##  [37]  4.294  1.265 -1.124  0.663  1.446  6.317  3.165  4.307  1.086  3.394  6.221  2.300
+##  [49] -1.841  1.480  1.511  0.345  5.772  1.514  3.011  6.103  2.194  6.700  1.706  8.255
+##  [61]  7.428  3.659  0.938  4.203  5.400  2.510  0.449  5.003  1.514  3.011  6.735 -0.324
+##  [73]  1.232 11.197  7.786  5.069  4.301 -0.818  1.554  1.232 11.197  7.617  5.069  4.113
+##  [85]  1.265 -1.124  2.535  1.446  6.317  4.182  7.111  0.354  4.307  1.903  4.607  5.672
+##  [97]  2.211  4.978  4.451  4.504</code></pre>
+</div>
+<div id="section-1.7" class="section level2">
+<h2><span class="header-section-number">1.7</span> 市占率</h2>
+<p class="qiz">
+如果我們有好幾個產品， 比方說 <code>list(c(1,1,1,1), c(2,2,2,2), c(1,2,1,2), c(2,1,2,1))</code> :<br>   你要如何比較這些產品的價值呢？
+</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">pds =<span class="st"> </span><span class="kw">list</span>(<span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">1</span>), <span class="kw">c</span>(<span class="dv">2</span>,<span class="dv">2</span>,<span class="dv">2</span>,<span class="dv">2</span>), <span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">1</span>,<span class="dv">2</span>), <span class="kw">c</span>(<span class="dv">2</span>,<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">1</span>))
+uts =<span class="st"> </span><span class="kw">sapply</span>(pds, UT )
+<span class="kw">head</span>(uts)</code></pre></div>
+<pre><code>##       [,1]   [,2]   [,3]  [,4]
+## [1,] 2.690 -0.568  1.232 0.890
+## [2,] 7.835  5.397 11.197 2.035
+## [3,] 6.738  1.986  7.786 0.938
+## [4,] 3.511  6.869  5.069 5.311
+## [5,] 2.401  9.101  4.301 7.201
+## [6,] 4.572 -1.618 -0.818 3.772</code></pre>
+<p class="qiz">
+如果每一位消費者都購買對她最有價值的產品，這些產品的市占率分別是多大呢？
+</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">(<span class="dt">tb =</span> <span class="kw">table</span>(<span class="kw">apply</span>(uts, <span class="dv">1</span>, which.max)))</code></pre></div>
+<pre><code>## 
+##  1  2  3  4 
+## 59 15 19  7</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">amPie</span>(<span class="kw">data.frame</span>(<span class="dt">label=</span><span class="kw">names</span>(tb), <span class="dt">value=</span><span class="kw">as.vector</span>(tb)),
+      <span class="dt">inner_radius=</span><span class="dv">50</span>, <span class="dt">depth=</span><span class="dv">10</span>, <span class="dt">show_values=</span><span class="ot">TRUE</span>, <span class="dt">legend=</span><span class="ot">TRUE</span>)</code></pre></div>
+<div id="htmlwidget-5c4d4ef92d610eba3541" style="width:100%;height:500px;" class="ramcharts_base html-widget"></div>
+<script type="application/json" data-for="htmlwidget-5c4d4ef92d610eba3541">{"x":{"chartData":{"valueField":"value","titleField":"label","startDuration":0,"colorField":"color","labelsEnabled":true,"depth3D":10,"angle":15,"innerRadius":"50 %","dataProvider":[{"label":"1","value":59,"color":"#67b7dc"},{"label":"2","value":15,"color":"#fdd400"},{"label":"3","value":19,"color":"#84b761"},{"label":"4","value":7,"color":"#cc4748"}],"legend":{"position":"right","align":"left"},"type":"pie"},"background":"#ffffff","listeners":null,"axes_listeners":null,"axes_listenersIndices":null,"categoryAxis_listeners":null,"chartCursor_listeners":null,"dataSetSelector_listeners":null,"legend_listeners":null,"panels_listeners":null,"panels_listenersIndices":null,"periodSelector_listeners":null,"valueAxes_listeners":null,"valueAxes_listenersIndices":null},"evals":[],"jsHooks":[]}</script>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="newProd.html" class="navigation navigation-next " aria-label="Next page""><i class="fa fa-angle-right"></i></a>
+
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"facebook": true,
+"twitter": true,
+"google": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    if (location.protocol !== "file:" && /^https?:/.test(script.src))
+      script.src  = script.src.replace(/^https?:/, '');
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

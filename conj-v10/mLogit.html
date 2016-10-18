@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>聯合分析與行銷策略</title>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+  <meta name="description" content="聯合分析與行銷策略">
+  <meta name="generator" content="bookdown 0.1 and GitBook 2.6.7">
+
+  <meta property="og:title" content="聯合分析與行銷策略" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="聯合分析與行銷策略" />
+  
+  
+  
+
+<meta name="author" content="Tony Chuo, tonychuo@gmail.com">
+
+<meta name="date" content="2016-10-18">
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="twoProd.html">
+
+
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+<script src="libs/htmlwidgets-0.7/htmlwidgets.js"></script>
+<script src="libs/amcharts-3.20.10/amcharts.js"></script>
+<script src="libs/ramcharts_base-binding-2.1.1/ramcharts_base.js"></script>
+<script src="libs/amcharts_type_pie-3.20.10/pie.js"></script>
+<script src="libs/underscore-1.8.3/underscore-min.js"></script>
+<link href="libs/highcharts-4.2.4/css/motion.css" rel="stylesheet" />
+<script src="libs/highcharts-4.2.4/highstock.js"></script>
+<script src="libs/highcharts-4.2.4/highcharts-more.js"></script>
+<script src="libs/highcharts-4.2.4/highcharts-3d.js"></script>
+<script src="libs/highcharts-4.2.4/modules/exporting.js"></script>
+<script src="libs/highcharts-4.2.4/modules/drilldown.js"></script>
+<script src="libs/highcharts-4.2.4/modules/data.js"></script>
+<script src="libs/highcharts-4.2.4/modules/heatmap.js"></script>
+<script src="libs/highcharts-4.2.4/modules/map.js"></script>
+<script src="libs/highcharts-4.2.4/modules/treemap.js"></script>
+<script src="libs/highcharts-4.2.4/modules/funnel.js"></script>
+<script src="libs/highcharts-4.2.4/modules/solid-gauge.js"></script>
+<script src="libs/highcharts-4.2.4/modules/reset.js"></script>
+<script src="libs/highcharts-4.2.4/plugins/annotations.js"></script>
+<script src="libs/highcharts-4.2.4/plugins/motion.js"></script>
+<script src="libs/highcharts-4.2.4/plugins/draggable-points.js"></script>
+<script src="libs/highcharts-4.2.4/plugins/pattern-fill-v2.js"></script>
+<script src="libs/highcharts-4.2.4/plugins/text-symbols.js"></script>
+<script src="libs/highcharts-4.2.4/plugins/symbols-extra.js"></script>
+<link href="libs/fontawesome-4.5.0/font-awesome.min.css" rel="stylesheet" />
+<link href="libs/htmlwdgtgrid-1/htmlwdgtgrid.css" rel="stylesheet" />
+<script src="libs/highchart-binding-0.4.0/highchart.js"></script>
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="http://msrc.cm.nsysu.edu.tw/files/14-1135-157765,r1143-1.php" target="blank">
+<img src="bm.png" alt="聯合分析與行銷策略" style="width:250px;height:60px"></a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>前言</a><ul>
+<li><a href="index.html#--"><strong>課程需求</strong> 與 <strong>課前準備</strong></a></li>
+<li><a href="index.html#3c7374726f6e673ee881afe59088e58886e69e90e7b0a1e4bb8b3c2f7374726f6e673e"><strong>聯合分析簡介</strong></a></li>
+<li><a href="index.html#3c7374726f6e673ee8aab2e7a88be585a7e5aeb9e7b0a1e4bb8b3c2f7374726f6e673e"><strong>課程內容簡介</strong></a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="conjoint.html"><a href="conjoint.html"><i class="fa fa-check"></i><b>1</b> 聯合分析</a><ul>
+<li class="chapter" data-level="1.1" data-path="conjoint.html"><a href="conjoint.html#section-1.1"><i class="fa fa-check"></i><b>1.1</b> 案例資料</a></li>
+<li class="chapter" data-level="1.2" data-path="conjoint.html"><a href="conjoint.html#section-1.2"><i class="fa fa-check"></i><b>1.2</b> 屬性的重要性</a></li>
+<li class="chapter" data-level="1.3" data-path="conjoint.html"><a href="conjoint.html#-apw"><i class="fa fa-check"></i><b>1.3</b> 選項的平均價值 (APW)</a></li>
+<li class="chapter" data-level="1.4" data-path="conjoint.html"><a href="conjoint.html#section-1.4"><i class="fa fa-check"></i><b>1.4</b> 受測群體的平均喜好</a></li>
+<li class="chapter" data-level="1.5" data-path="conjoint.html"><a href="conjoint.html#section-1.5"><i class="fa fa-check"></i><b>1.5</b> 個人的喜好差異</a></li>
+<li class="chapter" data-level="1.6" data-path="conjoint.html"><a href="conjoint.html#section-1.6"><i class="fa fa-check"></i><b>1.6</b> 效用函數</a></li>
+<li class="chapter" data-level="1.7" data-path="conjoint.html"><a href="conjoint.html#section-1.7"><i class="fa fa-check"></i><b>1.7</b> 市占率</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="newProd.html"><a href="newProd.html"><i class="fa fa-check"></i><b>2</b> 產品設計與定價策略</a><ul>
+<li class="chapter" data-level="2.1" data-path="newProd.html"><a href="newProd.html#section-2.1"><i class="fa fa-check"></i><b>2.1</b> 成本函數</a></li>
+<li class="chapter" data-level="2.2" data-path="newProd.html"><a href="newProd.html#section-2.2"><i class="fa fa-check"></i><b>2.2</b> 價量關係、營收、獲利</a></li>
+<li class="chapter" data-level="" data-path="newProd.html"><a href="newProd.html#sim-1-"><i class="fa fa-check"></i>SIM-1: 產品設計與定價策略</a></li>
+<li class="chapter" data-level="2.3" data-path="newProd.html"><a href="newProd.html#section-2.3"><i class="fa fa-check"></i><b>2.3</b> 自動模擬</a></li>
+<li class="chapter" data-level="2.4" data-path="newProd.html"><a href="newProd.html#section-2.4"><i class="fa fa-check"></i><b>2.4</b> 策略目標、策略優化</a></li>
+<li class="chapter" data-level="2.5" data-path="newProd.html"><a href="newProd.html#section-2.5"><i class="fa fa-check"></i><b>2.5</b> 目標的範圍、合理的策略</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="segment.html"><a href="segment.html"><i class="fa fa-check"></i><b>3</b> 族群分析與市場區隔</a><ul>
+<li class="chapter" data-level="3.1" data-path="segment.html"><a href="segment.html#-k-means"><i class="fa fa-check"></i><b>3.1</b> 族群分析 (K-means)</a></li>
+<li class="chapter" data-level="3.2" data-path="segment.html"><a href="segment.html#average-part-worth-per-segment-apwps"><i class="fa fa-check"></i><b>3.2</b> Average Part Worth per Segment (APWPS)</a></li>
+<li class="chapter" data-level="" data-path="segment.html"><a href="segment.html#sim-2-"><i class="fa fa-check"></i>SIM-2: 族群分析與市場區隔</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="twoProd.html"><a href="twoProd.html"><i class="fa fa-check"></i><b>4</b> 雙產品市場</a><ul>
+<li class="chapter" data-level="4.1" data-path="twoProd.html"><a href="twoProd.html#section-4.1"><i class="fa fa-check"></i><b>4.1</b> 價量關係</a></li>
+<li class="chapter" data-level="" data-path="twoProd.html"><a href="twoProd.html#sim-3-"><i class="fa fa-check"></i>SIM-3: 雙產品市場模擬</a></li>
+<li class="chapter" data-level="4.2" data-path="twoProd.html"><a href="twoProd.html#section-4.2"><i class="fa fa-check"></i><b>4.2</b> 競爭策略</a></li>
+<li class="chapter" data-level="4.3" data-path="twoProd.html"><a href="twoProd.html#section-4.3"><i class="fa fa-check"></i><b>4.3</b> 產品線規劃</a></li>
+<li class="chapter" data-level="4.4" data-path="twoProd.html"><a href="twoProd.html#-1"><i class="fa fa-check"></i><b>4.4</b> 自動模擬</a><ul>
+<li class="chapter" data-level="4.4.1" data-path="twoProd.html"><a href="twoProd.html#section-4.4.1"><i class="fa fa-check"></i><b>4.4.1</b> 價格空間</a></li>
+<li class="chapter" data-level="4.4.2" data-path="twoProd.html"><a href="twoProd.html#section-4.4.2"><i class="fa fa-check"></i><b>4.4.2</b> 產品組合</a></li>
+<li class="chapter" data-level="4.4.3" data-path="twoProd.html"><a href="twoProd.html#section-4.4.3"><i class="fa fa-check"></i><b>4.4.3</b> 模擬結果</a></li>
+</ul></li>
+<li class="chapter" data-level="4.5" data-path="twoProd.html"><a href="twoProd.html#section-4.5"><i class="fa fa-check"></i><b>4.5</b> 產品差異的重要性</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="mLogit.html"><a href="mLogit.html"><i class="fa fa-check"></i><b>5</b> A mLogit CBC Example</a><ul>
+<li class="chapter" data-level="5.1" data-path="mLogit.html"><a href="mLogit.html#the-tv-dataset"><i class="fa fa-check"></i><b>5.1</b> The TV Dataset</a></li>
+<li class="chapter" data-level="5.2" data-path="mLogit.html"><a href="mLogit.html#multinominal-logit-model"><i class="fa fa-check"></i><b>5.2</b> Multinominal Logit Model</a></li>
+<li class="chapter" data-level="5.3" data-path="mLogit.html"><a href="mLogit.html#regression-interpolation-of-price-coefficients"><i class="fa fa-check"></i><b>5.3</b> Regression (Interpolation) of Price Coefficients</a></li>
+<li class="chapter" data-level="5.4" data-path="mLogit.html"><a href="mLogit.html#market-simulation"><i class="fa fa-check"></i><b>5.4</b> Market Simulation</a></li>
+<li class="chapter" data-level="" data-path="mLogit.html"><a href="mLogit.html#quiz-6-"><i class="fa fa-check"></i>QUIZ-6 市占率與價格彈性</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="http://www.cm.nsysu.edu.tw/bin/home.php" target="blank">
+中山大學管理學院</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">聯合分析與行銷策略</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="mLogit" class="section level1">
+<h1><span class="header-section-number">5</span> A mLogit CBC Example</h1>
+<div id="the-tv-dataset" class="section level2">
+<h2><span class="header-section-number">5.1</span> The TV Dataset</h2>
+<p>The TV dataset is the outcome (part worths matrix for 352 respondent) of a mLogit CBC shared by <a href="http://www.sawtoothsoftware.com/">SawTooth Software</a>. There five attributes:</p>
+<ul>
+<li>Brand: JVC, RCA, Sony. It helps to evaluate <strong>brand equities</strong></li>
+<li>Sound: Mono, Sterio, Sround.</li>
+<li>CB (Channel Block): nCB, CB</li>
+<li>PIP (Picture in Picture): nPIP, PIP</li>
+<li>Price: 300, 350, 400, 450. It helps to evaluate part worths in <strong>monetary</strong> unit.</li>
+</ul>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">pw =<span class="st"> </span><span class="kw">read.csv</span>(<span class="st">&quot;../tv/tv.csv&quot;</span>)
+levels =<span class="st"> </span><span class="kw">names</span>(pw)
+att =<span class="st"> </span><span class="kw">c</span>(<span class="dv">3</span>,<span class="dv">3</span>,<span class="dv">3</span>,<span class="dv">2</span>,<span class="dv">2</span>,<span class="dv">4</span>)
+<span class="kw">names</span>(att) =<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;Brand&quot;</span>,<span class="st">&quot;Screen&quot;</span>,<span class="st">&quot;Sound&quot;</span>,<span class="st">&quot;CB&quot;</span>,<span class="st">&quot;PIP&quot;</span>,<span class="st">&quot;Price&quot;</span>)
+levcol =<span class="st"> </span><span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">2</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">3</span>,<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">4</span>,<span class="dv">5</span>,<span class="dv">5</span>,<span class="dv">6</span>,<span class="dv">6</span>,<span class="dv">6</span>,<span class="dv">6</span>)
+apw =<span class="st"> </span><span class="kw">apply</span>(pw,<span class="dv">2</span>,mean)
+ppw =<span class="st"> </span><span class="dv">200</span> *<span class="st"> </span>apw[<span class="dv">1</span>:<span class="dv">13</span>]/(apw[<span class="dv">14</span>]-apw[<span class="dv">17</span>])
+im =<span class="st"> </span><span class="kw">c</span>(apw[<span class="dv">3</span>]-apw[<span class="dv">1</span>], apw[<span class="dv">6</span>]-apw[<span class="dv">4</span>], apw[<span class="dv">9</span>]-apw[<span class="dv">7</span>],
+       apw[<span class="dv">11</span>]-apw[<span class="dv">10</span>], apw[<span class="dv">13</span>]-apw[<span class="dv">12</span>], apw[<span class="dv">14</span>]-apw[<span class="dv">17</span>])
+im =<span class="st"> </span><span class="dv">100</span> *<span class="st"> </span>im/<span class="kw">sum</span>(im)
+<span class="kw">names</span>(im) =<span class="st"> </span><span class="kw">names</span>(att)
+
+<span class="kw">par</span>(<span class="dt">mar=</span><span class="kw">c</span>(<span class="dv">5</span>,<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">2</span>),<span class="dt">mfrow=</span><span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">3</span>))
+<span class="kw">barplot</span>(im,<span class="dt">las=</span><span class="dv">2</span>,<span class="dt">col=</span><span class="dv">1</span>:<span class="kw">length</span>(im),<span class="dt">main=</span><span class="st">&quot;Attribute Importance (%)&quot;</span>)
+<span class="kw">abline</span>(<span class="dt">h=</span><span class="kw">seq</span>(<span class="dv">5</span>,<span class="dv">25</span>,<span class="dv">5</span>),<span class="dt">lty=</span><span class="dv">3</span>,<span class="dt">col=</span><span class="st">&#39;grey&#39;</span>)
+<span class="kw">barplot</span>(apw,<span class="dt">las=</span><span class="dv">2</span>,<span class="dt">col=</span>levcol,<span class="dt">main=</span><span class="st">&quot;Part Worths (utils)&quot;</span>)
+<span class="kw">abline</span>(<span class="dt">h=</span><span class="kw">seq</span>(-<span class="fl">1.5</span>,<span class="fl">1.0</span>,<span class="fl">0.5</span>),<span class="dt">lty=</span><span class="dv">3</span>,<span class="dt">col=</span><span class="st">&#39;grey&#39;</span>)
+<span class="kw">barplot</span>(ppw,<span class="dt">las=</span><span class="dv">2</span>,<span class="dt">col=</span>levcol,<span class="dt">main=</span><span class="st">&quot;Part Worths ($)&quot;</span>,<span class="dt">ylim=</span><span class="kw">c</span>(-<span class="dv">120</span>,<span class="dv">100</span>))
+<span class="kw">abline</span>(<span class="dt">h=</span><span class="kw">seq</span>(-<span class="dv">100</span>,<span class="dv">100</span>,<span class="dv">50</span>),<span class="dt">lty=</span><span class="dv">3</span>,<span class="dt">col=</span><span class="st">&#39;grey&#39;</span>)</code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-36-1.png" width="960" style="display: block; margin: auto;" /></p>
+<p>這個案例有兩個常用的重要屬性：</p>
+<ul>
+<li>價格： 可以讓我們把 <strong>效用</strong> 轉成 <strong>貨幣</strong> 單位</li>
+<li>品牌： 讓我們可以計算 <strong>品牌權益</strong> <br/></li>
+</ul>
+<p class="qiz">
+跟JVC相比，消費者平均願意為SONY這個品牌多付多少錢呢？ <br/> 除了「功能」之外，我們可以把「情感」或「社會」性的屬性，也拿來用聯合分析做產品設計嗎？ <br/> 除了產品設計之外，你可以舉出聯合分析的其他應用嗎？ <br/> 你可以講出聯合分析的(全面性的)應用範圍嗎？ <br/>
+</p>
+</div>
+<div id="multinominal-logit-model" class="section level2">
+<h2><span class="header-section-number">5.2</span> Multinominal Logit Model</h2>
+<p>In this CBC, the respondents’ part worths are estimated by <strong>Multinominal Logit</strong> model. <strong>mLogit</strong> is similar to Logistic, but it acts on target variables of more than two levels. As explained in 1.6, given a specific product, respondent’s utility is still the sum of part worths. <br/></p>
+<p>在 mLogit 模型裡面，我們一樣是用線性模型估計選項對每一位受測者的效用：</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">pds =<span class="st"> </span><span class="kw">list</span>(<span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">1</span>,<span class="dv">1</span>),<span class="kw">c</span>(<span class="dv">2</span>,<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">2</span>,<span class="dv">2</span>),<span class="kw">c</span>(<span class="dv">3</span>,<span class="dv">2</span>,<span class="dv">2</span>,<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>),<span class="kw">c</span>(<span class="dv">3</span>,<span class="dv">3</span>,<span class="dv">3</span>,<span class="dv">2</span>,<span class="dv">1</span>,<span class="dv">4</span>))
+ut =<span class="st"> </span><span class="kw">sapply</span>(pds, function(pd) <span class="kw">rowSums</span>(pw[ pd +<span class="st"> </span><span class="kw">c</span>(<span class="dv">0</span>,<span class="dv">3</span>,<span class="dv">6</span>,<span class="dv">9</span>,<span class="dv">11</span>,<span class="dv">13</span>) ]))
+<span class="kw">head</span>(ut)</code></pre></div>
+<pre><code>##        [,1]   [,2]   [,3]   [,4]
+## [1,] -0.135 -1.841  2.931 -0.427
+## [2,] -2.998  2.629  1.934  0.745
+## [3,]  0.473  0.928 -0.411 -1.518
+## [4,]  0.534 -0.563  1.148 -1.535
+## [5,] -5.063 -2.452  2.753  3.242
+## [6,] -3.593 -4.841  2.637  3.054</code></pre>
+<p>但是，我們不再假設消費者一定會選效用最高的產品，而是依據產品的相對價值，估計每一位受測者會購買各產品的機率。 受測者 <span class="math inline">\(i\)</span> 會購買產品 <span class="math inline">\(k\)</span> 的機率估計為： <span class="math display">\[
+P_{i,k} = \frac{exp(u_{i,k})}{\sum_J exp(u_{i,j})} 
+\]</span></p>
+<p>例如，第一位受測者買第一項產品的機率是： <span class="math display">\[
+P_{1,1}=\frac{e^{-0.135}}{e^{-0.135}+e^{-1.841}+e^{2.931}+e^{-0.427}} = 4.28\%
+\]</span></p>
+<p class="qiz">
+如果只有兩個產品，購買機率的公式會變成怎樣？<br> 那如果只有一個產品呢？
+<p>
+<p><br></p>
+<p>接下來，我們用上面的公式把效用轉換成機率，</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">pb =<span class="st"> </span><span class="kw">t</span>(<span class="kw">apply</span>(ut, <span class="dv">1</span>, function (u) <span class="kw">exp</span>(u)/<span class="kw">sum</span>(<span class="kw">exp</span>(u)) ))
+<span class="kw">head</span>(pb)</code></pre></div>
+<pre><code>##           [,1]      [,2]   [,3]    [,4]
+## [1,] 0.0427638 0.0077655 0.9175 0.03193
+## [2,] 0.0021753 0.6043557 0.3016 0.09185
+## [3,] 0.3199120 0.5042368 0.1322 0.04369
+## [4,] 0.3022983 0.1009287 0.5586 0.03818
+## [5,] 0.0001529 0.0020819 0.3793 0.61849
+## [6,] 0.0007815 0.0002244 0.3968 0.60216</code></pre>
+<p>把受測族群的機率加總起來，就是該族群對各產品的期望需求數量，</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">(<span class="dt">qty =</span> <span class="kw">colSums</span>(pb) )</code></pre></div>
+<pre><code>## [1]  40.88  81.04 112.25 117.83</code></pre>
+<p>然後，再換算成各產品的市佔率：</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">pcg =<span class="st"> </span><span class="kw">round</span>(<span class="dv">100</span> *<span class="st"> </span>qty/<span class="kw">sum</span>(qty),<span class="dv">1</span>)
+<span class="kw">par</span>(<span class="dt">mar=</span><span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">1</span>,<span class="dv">2</span>))
+<span class="kw">pie</span>(pcg,<span class="kw">paste0</span>(<span class="dv">1</span>:<span class="dv">4</span>, <span class="st">&quot;: &quot;</span>, pcg, <span class="st">&quot;%&quot;</span>))</code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-40-1.png" width="672" style="display: block; margin: auto;" /></p>
+</div>
+<div id="regression-interpolation-of-price-coefficients" class="section level2">
+<h2><span class="header-section-number">5.3</span> Regression (Interpolation) of Price Coefficients</h2>
+<p>為了訂價的連續性，我們常常會需要對價格係數做迴歸(或內、外插)：</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co">#utP = function(p) {</span>
+<span class="co">#  if     (p &gt;= 300 &amp; p &lt; 350)  ((350-p)*pw$p300 + (p-300)*pw$p350)/50</span>
+<span class="co">#  else if(p &gt;= 350 &amp; p &lt; 400)  ((400-p)*pw$p350 + (p-350)*pw$p400)/50</span>
+<span class="co">#  else if(p &gt;= 400 &amp; p &lt;= 450) ((450-p)*pw$p400 + (p-400)*pw$p450)/50 }</span>
+p1 =<span class="st"> </span><span class="kw">c</span>(<span class="dv">300</span>,<span class="dv">350</span>,<span class="dv">400</span>,<span class="dv">450</span>)
+coef =<span class="st"> </span><span class="kw">apply</span>(pw[,<span class="dv">14</span>:<span class="dv">17</span>], <span class="dv">1</span>, function(x) <span class="kw">lm</span>(ut~.,<span class="kw">data.frame</span>(<span class="dt">ut=</span>x,p1,p1^<span class="dv">2</span>,p1^<span class="dv">3</span>))$coef )
+utP =<span class="st"> </span>function(p) <span class="kw">t</span>(coef) %*%<span class="st"> </span><span class="kw">c</span>(<span class="dv">1</span>, p, p^<span class="dv">2</span>, p^<span class="dv">3</span>)</code></pre></div>
+<p>轉換函數<code>utP()</code>可以讓我們看到每一個受測者的價格敏感程度。</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">par</span>(<span class="dt">mar=</span><span class="kw">c</span>(<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">1</span>,<span class="dv">3</span>))
+<span class="kw">matplot</span>(<span class="kw">t</span>(<span class="kw">sapply</span>(<span class="dv">300</span>:<span class="dv">450</span>,utP)[<span class="dv">11</span>:<span class="dv">20</span>,]),<span class="dt">type=</span><span class="st">&#39;l&#39;</span>)</code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-42-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>有了轉換函數<code>utP()</code>， 就可以自由的預測不同價格之下的市占率。</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">pdp =<span class="st"> </span><span class="kw">list</span>(<span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">1</span>,<span class="dv">325</span>),<span class="kw">c</span>(<span class="dv">2</span>,<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">2</span>,<span class="dv">399</span>),<span class="kw">c</span>(<span class="dv">3</span>,<span class="dv">2</span>,<span class="dv">2</span>,<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">410</span>),<span class="kw">c</span>(<span class="dv">3</span>,<span class="dv">3</span>,<span class="dv">3</span>,<span class="dv">2</span>,<span class="dv">1</span>,<span class="dv">450</span>))
+ut =<span class="st"> </span><span class="kw">sapply</span>(pdp, function(x) <span class="kw">rowSums</span>(pw[ x[<span class="dv">1</span>:<span class="dv">5</span>] +<span class="st"> </span><span class="kw">c</span>(<span class="dv">0</span>,<span class="dv">3</span>,<span class="dv">6</span>,<span class="dv">9</span>,<span class="dv">11</span>) ]) +<span class="st"> </span><span class="kw">utP</span>(x[<span class="dv">6</span>]))
+pb =<span class="st"> </span><span class="kw">t</span>(<span class="kw">apply</span>(ut, <span class="dv">1</span>, function (u) <span class="kw">exp</span>(u)/<span class="kw">sum</span>(<span class="kw">exp</span>(u)) ))
+qty =<span class="st"> </span><span class="kw">colSums</span>(pb)
+pcg =<span class="st"> </span><span class="kw">round</span>(<span class="dv">100</span> *<span class="st"> </span>qty/<span class="kw">sum</span>(qty),<span class="dv">1</span>)
+<span class="kw">par</span>(<span class="dt">mar=</span><span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">1</span>,<span class="dv">2</span>))
+<span class="kw">pie</span>(pcg,<span class="kw">paste0</span>(<span class="dv">1</span>:<span class="dv">4</span>, <span class="st">&quot;: &quot;</span>, pcg, <span class="st">&quot;%&quot;</span>))</code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-43-1.png" width="672" style="display: block; margin: auto;" /></p>
+</div>
+<div id="market-simulation" class="section level2">
+<h2><span class="header-section-number">5.4</span> Market Simulation</h2>
+<p>然後就可以進行多產品市場的模擬：</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Define the marginal costs of parts</span>
+costs =<span class="st"> </span><span class="kw">rbind</span>(<span class="kw">c</span>(<span class="dv">60</span>,<span class="dv">70</span>,<span class="dv">70</span>),<span class="kw">c</span>(<span class="dv">50</span>,<span class="dv">70</span>,<span class="dv">120</span>),<span class="kw">c</span>(<span class="dv">0</span>,<span class="dv">20</span>,<span class="dv">80</span>),<span class="kw">c</span>(<span class="dv">10</span>,<span class="dv">50</span>,<span class="dv">0</span>),<span class="kw">c</span>(<span class="dv">0</span>,<span class="dv">50</span>,<span class="dv">0</span>))
+MC =<span class="st"> </span>function(pd) <span class="kw">sum</span>(<span class="kw">sapply</span>(<span class="dv">1</span>:<span class="dv">5</span>, function(i) costs[i, pd[i]] ))</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Define the market as a list of products</span>
+pdp =<span class="st"> </span><span class="kw">list</span>(<span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">2</span>,<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">0</span>),
+           <span class="kw">c</span>(<span class="dv">2</span>,<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">2</span>,<span class="dv">300</span>),
+           <span class="kw">c</span>(<span class="dv">3</span>,<span class="dv">2</span>,<span class="dv">2</span>,<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">350</span>),<span class="kw">c</span>(<span class="dv">3</span>,<span class="dv">3</span>,<span class="dv">3</span>,<span class="dv">2</span>,<span class="dv">1</span>,<span class="dv">400</span>))
+plst =<span class="st"> </span><span class="kw">seq</span>(<span class="dv">300</span>,<span class="dv">450</span>)</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Then we can simulate how the outcome varies with the price of the first product</span>
+mx =<span class="st"> </span><span class="kw">sapply</span>(plst, function(x) {
+  pdp[[<span class="dv">1</span>]][<span class="dv">6</span>] =<span class="st"> </span>x
+  ut =<span class="st"> </span><span class="kw">sapply</span>(pdp, function(z) {<span class="kw">rowSums</span>(pw[ z[<span class="dv">1</span>:<span class="dv">5</span>] +<span class="st"> </span><span class="kw">c</span>(<span class="dv">0</span>,<span class="dv">3</span>,<span class="dv">6</span>,<span class="dv">9</span>,<span class="dv">11</span>) ]) +<span class="st"> </span><span class="kw">utP</span>(z[<span class="dv">6</span>])})
+  pb =<span class="st"> </span><span class="kw">t</span>(<span class="kw">apply</span>(ut, <span class="dv">1</span>, function (u) <span class="kw">exp</span>(u)/<span class="kw">sum</span>(<span class="kw">exp</span>(u)) ))
+  qty =<span class="st"> </span><span class="kw">colSums</span>(pb)
+  <span class="dv">100</span> *<span class="st"> </span>qty /<span class="st"> </span><span class="kw">sum</span>(qty)  })
+<span class="kw">par</span>(<span class="dt">mfrow=</span><span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">2</span>),<span class="dt">cex=</span><span class="fl">0.8</span>)
+profit =<span class="st"> </span>mx[<span class="dv">1</span>,] *<span class="st"> </span>(plst -<span class="st"> </span><span class="kw">MC</span>(pdp[[<span class="dv">1</span>]]))
+w =<span class="st"> </span><span class="kw">which.max</span>(profit); pst=plst[w]
+<span class="kw">plot</span>(plst,mx[<span class="dv">1</span>,],<span class="dt">type=</span><span class="st">&#39;l&#39;</span>,<span class="dt">col=</span><span class="dv">1</span>,<span class="dt">ylim=</span><span class="kw">c</span>(<span class="dv">0</span>,<span class="dv">45</span>),<span class="dt">main=</span><span class="st">&quot;Market Share&quot;</span>,
+     <span class="dt">ylab=</span><span class="st">&quot;&quot;</span>,<span class="dt">xlab=</span><span class="st">&quot;Price&quot;</span>)
+<span class="kw">abline</span>(<span class="dt">v=</span>pst,<span class="dt">col=</span><span class="st">&#39;pink&#39;</span> )
+for(i in <span class="dv">2</span>:<span class="kw">nrow</span>(mx)) <span class="kw">lines</span>(plst,mx[i,],<span class="dt">col=</span>i)
+<span class="kw">plot</span>(plst,profit,<span class="dt">type=</span><span class="st">&#39;l&#39;</span>,<span class="dt">ylim=</span><span class="kw">c</span>(<span class="dv">0</span>,<span class="dv">3000</span>),<span class="dt">ylab=</span><span class="st">&quot;&quot;</span>,<span class="dt">xlab=</span><span class="st">&quot;Price&quot;</span>,
+     <span class="dt">main=</span><span class="kw">sprintf</span>(<span class="st">&quot;Profit (%.1f @ %d)&quot;</span>,profit[w],pst))
+<span class="kw">abline</span>(<span class="dt">v=</span>pst,<span class="dt">col=</span><span class="st">&#39;pink&#39;</span> )</code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-46-1.png" width="768" style="display: block; margin: auto;" /> <br/></p>
+這裡我們可以觀察到 <strong>交叉價格彈性</strong> 的現象
+<p class="qiz">
+黑色產品藉由降價所獲得的市占主要來自哪一個產品？ 為什麼？
+</p>
+</div>
+<div id="quiz-6-" class="section level2 unnumbered">
+<h2>QUIZ-6 市占率與價格彈性</h2>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">source</span>(<span class="st">&quot;sim4.R&quot;</span>)</code></pre></div>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="twoProd.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"facebook": true,
+"twitter": true,
+"google": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    if (location.protocol !== "file:" && /^https?:/.test(script.src))
+      script.src  = script.src.replace(/^https?:/, '');
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

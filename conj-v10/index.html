@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>聯合分析與行銷策略</title>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+  <meta name="description" content="聯合分析與行銷策略">
+  <meta name="generator" content="bookdown 0.1 and GitBook 2.6.7">
+
+  <meta property="og:title" content="聯合分析與行銷策略" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="聯合分析與行銷策略" />
+  
+  
+  
+
+<meta name="author" content="Tony Chuo, tonychuo@gmail.com">
+
+<meta name="date" content="2016-10-18">
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+
+<link rel="next" href="conjoint.html">
+
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+<script src="libs/htmlwidgets-0.7/htmlwidgets.js"></script>
+<script src="libs/amcharts-3.20.10/amcharts.js"></script>
+<script src="libs/ramcharts_base-binding-2.1.1/ramcharts_base.js"></script>
+<script src="libs/amcharts_type_pie-3.20.10/pie.js"></script>
+<script src="libs/underscore-1.8.3/underscore-min.js"></script>
+<link href="libs/highcharts-4.2.4/css/motion.css" rel="stylesheet" />
+<script src="libs/highcharts-4.2.4/highstock.js"></script>
+<script src="libs/highcharts-4.2.4/highcharts-more.js"></script>
+<script src="libs/highcharts-4.2.4/highcharts-3d.js"></script>
+<script src="libs/highcharts-4.2.4/modules/exporting.js"></script>
+<script src="libs/highcharts-4.2.4/modules/drilldown.js"></script>
+<script src="libs/highcharts-4.2.4/modules/data.js"></script>
+<script src="libs/highcharts-4.2.4/modules/heatmap.js"></script>
+<script src="libs/highcharts-4.2.4/modules/map.js"></script>
+<script src="libs/highcharts-4.2.4/modules/treemap.js"></script>
+<script src="libs/highcharts-4.2.4/modules/funnel.js"></script>
+<script src="libs/highcharts-4.2.4/modules/solid-gauge.js"></script>
+<script src="libs/highcharts-4.2.4/modules/reset.js"></script>
+<script src="libs/highcharts-4.2.4/plugins/annotations.js"></script>
+<script src="libs/highcharts-4.2.4/plugins/motion.js"></script>
+<script src="libs/highcharts-4.2.4/plugins/draggable-points.js"></script>
+<script src="libs/highcharts-4.2.4/plugins/pattern-fill-v2.js"></script>
+<script src="libs/highcharts-4.2.4/plugins/text-symbols.js"></script>
+<script src="libs/highcharts-4.2.4/plugins/symbols-extra.js"></script>
+<link href="libs/fontawesome-4.5.0/font-awesome.min.css" rel="stylesheet" />
+<link href="libs/htmlwdgtgrid-1/htmlwdgtgrid.css" rel="stylesheet" />
+<script src="libs/highchart-binding-0.4.0/highchart.js"></script>
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="http://msrc.cm.nsysu.edu.tw/files/14-1135-157765,r1143-1.php" target="blank">
+<img src="bm.png" alt="聯合分析與行銷策略" style="width:250px;height:60px"></a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>前言</a><ul>
+<li><a href="index.html#--"><strong>課程需求</strong> 與 <strong>課前準備</strong></a></li>
+<li><a href="index.html#3c7374726f6e673ee881afe59088e58886e69e90e7b0a1e4bb8b3c2f7374726f6e673e"><strong>聯合分析簡介</strong></a></li>
+<li><a href="index.html#3c7374726f6e673ee8aab2e7a88be585a7e5aeb9e7b0a1e4bb8b3c2f7374726f6e673e"><strong>課程內容簡介</strong></a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="conjoint.html"><a href="conjoint.html"><i class="fa fa-check"></i><b>1</b> 聯合分析</a><ul>
+<li class="chapter" data-level="1.1" data-path="conjoint.html"><a href="conjoint.html#section-1.1"><i class="fa fa-check"></i><b>1.1</b> 案例資料</a></li>
+<li class="chapter" data-level="1.2" data-path="conjoint.html"><a href="conjoint.html#section-1.2"><i class="fa fa-check"></i><b>1.2</b> 屬性的重要性</a></li>
+<li class="chapter" data-level="1.3" data-path="conjoint.html"><a href="conjoint.html#-apw"><i class="fa fa-check"></i><b>1.3</b> 選項的平均價值 (APW)</a></li>
+<li class="chapter" data-level="1.4" data-path="conjoint.html"><a href="conjoint.html#section-1.4"><i class="fa fa-check"></i><b>1.4</b> 受測群體的平均喜好</a></li>
+<li class="chapter" data-level="1.5" data-path="conjoint.html"><a href="conjoint.html#section-1.5"><i class="fa fa-check"></i><b>1.5</b> 個人的喜好差異</a></li>
+<li class="chapter" data-level="1.6" data-path="conjoint.html"><a href="conjoint.html#section-1.6"><i class="fa fa-check"></i><b>1.6</b> 效用函數</a></li>
+<li class="chapter" data-level="1.7" data-path="conjoint.html"><a href="conjoint.html#section-1.7"><i class="fa fa-check"></i><b>1.7</b> 市占率</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="newProd.html"><a href="newProd.html"><i class="fa fa-check"></i><b>2</b> 產品設計與定價策略</a><ul>
+<li class="chapter" data-level="2.1" data-path="newProd.html"><a href="newProd.html#section-2.1"><i class="fa fa-check"></i><b>2.1</b> 成本函數</a></li>
+<li class="chapter" data-level="2.2" data-path="newProd.html"><a href="newProd.html#section-2.2"><i class="fa fa-check"></i><b>2.2</b> 價量關係、營收、獲利</a></li>
+<li class="chapter" data-level="" data-path="newProd.html"><a href="newProd.html#sim-1-"><i class="fa fa-check"></i>SIM-1: 產品設計與定價策略</a></li>
+<li class="chapter" data-level="2.3" data-path="newProd.html"><a href="newProd.html#section-2.3"><i class="fa fa-check"></i><b>2.3</b> 自動模擬</a></li>
+<li class="chapter" data-level="2.4" data-path="newProd.html"><a href="newProd.html#section-2.4"><i class="fa fa-check"></i><b>2.4</b> 策略目標、策略優化</a></li>
+<li class="chapter" data-level="2.5" data-path="newProd.html"><a href="newProd.html#section-2.5"><i class="fa fa-check"></i><b>2.5</b> 目標的範圍、合理的策略</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="segment.html"><a href="segment.html"><i class="fa fa-check"></i><b>3</b> 族群分析與市場區隔</a><ul>
+<li class="chapter" data-level="3.1" data-path="segment.html"><a href="segment.html#-k-means"><i class="fa fa-check"></i><b>3.1</b> 族群分析 (K-means)</a></li>
+<li class="chapter" data-level="3.2" data-path="segment.html"><a href="segment.html#average-part-worth-per-segment-apwps"><i class="fa fa-check"></i><b>3.2</b> Average Part Worth per Segment (APWPS)</a></li>
+<li class="chapter" data-level="" data-path="segment.html"><a href="segment.html#sim-2-"><i class="fa fa-check"></i>SIM-2: 族群分析與市場區隔</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="twoProd.html"><a href="twoProd.html"><i class="fa fa-check"></i><b>4</b> 雙產品市場</a><ul>
+<li class="chapter" data-level="4.1" data-path="twoProd.html"><a href="twoProd.html#section-4.1"><i class="fa fa-check"></i><b>4.1</b> 價量關係</a></li>
+<li class="chapter" data-level="" data-path="twoProd.html"><a href="twoProd.html#sim-3-"><i class="fa fa-check"></i>SIM-3: 雙產品市場模擬</a></li>
+<li class="chapter" data-level="4.2" data-path="twoProd.html"><a href="twoProd.html#section-4.2"><i class="fa fa-check"></i><b>4.2</b> 競爭策略</a></li>
+<li class="chapter" data-level="4.3" data-path="twoProd.html"><a href="twoProd.html#section-4.3"><i class="fa fa-check"></i><b>4.3</b> 產品線規劃</a></li>
+<li class="chapter" data-level="4.4" data-path="twoProd.html"><a href="twoProd.html#-1"><i class="fa fa-check"></i><b>4.4</b> 自動模擬</a><ul>
+<li class="chapter" data-level="4.4.1" data-path="twoProd.html"><a href="twoProd.html#section-4.4.1"><i class="fa fa-check"></i><b>4.4.1</b> 價格空間</a></li>
+<li class="chapter" data-level="4.4.2" data-path="twoProd.html"><a href="twoProd.html#section-4.4.2"><i class="fa fa-check"></i><b>4.4.2</b> 產品組合</a></li>
+<li class="chapter" data-level="4.4.3" data-path="twoProd.html"><a href="twoProd.html#section-4.4.3"><i class="fa fa-check"></i><b>4.4.3</b> 模擬結果</a></li>
+</ul></li>
+<li class="chapter" data-level="4.5" data-path="twoProd.html"><a href="twoProd.html#section-4.5"><i class="fa fa-check"></i><b>4.5</b> 產品差異的重要性</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="mLogit.html"><a href="mLogit.html"><i class="fa fa-check"></i><b>5</b> A mLogit CBC Example</a><ul>
+<li class="chapter" data-level="5.1" data-path="mLogit.html"><a href="mLogit.html#the-tv-dataset"><i class="fa fa-check"></i><b>5.1</b> The TV Dataset</a></li>
+<li class="chapter" data-level="5.2" data-path="mLogit.html"><a href="mLogit.html#multinominal-logit-model"><i class="fa fa-check"></i><b>5.2</b> Multinominal Logit Model</a></li>
+<li class="chapter" data-level="5.3" data-path="mLogit.html"><a href="mLogit.html#regression-interpolation-of-price-coefficients"><i class="fa fa-check"></i><b>5.3</b> Regression (Interpolation) of Price Coefficients</a></li>
+<li class="chapter" data-level="5.4" data-path="mLogit.html"><a href="mLogit.html#market-simulation"><i class="fa fa-check"></i><b>5.4</b> Market Simulation</a></li>
+<li class="chapter" data-level="" data-path="mLogit.html"><a href="mLogit.html#quiz-6-"><i class="fa fa-check"></i>QUIZ-6 市占率與價格彈性</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="http://www.cm.nsysu.edu.tw/bin/home.php" target="blank">
+中山大學管理學院</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">聯合分析與行銷策略</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="header">
+<h1 class="title">聯合分析與行銷策略</h1>
+<h3 class="subtitle"><em>Marketing Strategies by Conjoint Analysis</em></h3>
+<h4 class="author"><em>Tony Chuo, <a href="mailto:tonychuo@gmail.com">tonychuo@gmail.com</a></em></h4>
+<h4 class="date"><em>2016-10-18</em></h4>
+</div>
+<div id="e5898de8a880" class="section level1 unnumbered">
+<h1>前言</h1>
+<p>數據分析是現代經理人需要具備的職能，我們不只要會用數據來建模型，更要會使用模型來制訂策略。 在這個Workshop裡面，我們教大家：</p>
+<ul>
+<li>使用 R 語言 來建 <strong>聯合分析</strong> (Conjoint Anlaysis)模型</li>
+<li>使用聯合分析模型來進行 <strong>市場模擬</strong> (Market Simulation)</li>
+<li>實際操作 <strong>市場區隔</strong> 、 <strong>產品設計</strong> 與 <strong>產品線規劃</strong></li>
+<li>並練習在各種市場情境之下制訂 <strong>價格策略</strong> 與 <strong>競爭策略</strong></li>
+</ul>
+<div id="--" class="section level2 unnumbered">
+<h2><strong>課程需求</strong> 與 <strong>課前準備</strong></h2>
+<p>課前我們會提供程式和資料，讓大家上課時在自己的電腦上做市場模擬和策略規劃。所以，還沒用過R和RStudio的同學，請在上課之前先到以下網址，自行下載、安裝這兩項免費軟體：</p>
+<ul>
+<li><a href="http://cran.r-project.org/bin/windows/base/">R-3.3.1 for Windows</a> &amp; <a href="https://www.rstudio.com/products/rstudio/download/">Rstudio for Windows Vista/7/8/10</a></li>
+<li><a href="http://cran.us.r-project.org/bin/macosx/">R-3.3.1 for Mac OS X</a> &amp; <a href="https://www.rstudio.com/products/rstudio/download/">Rstudio for Mac OS X</a></li>
+</ul>
+<p>這不是R語言的簡介課程，同學並不需要會寫程式，但是需要具備一些在R的環境下做基本運算的能力。 如果你完全沒用過R，請你看一下 <a href="http://www.datacamp.com/community/open-courses/r-%E8%AA%9E%E8%A8%80%E5%B0%8E%E8%AB%96#gs.G=3f5GQ">R 語言導論</a> 這個簡短的免費線上課程，它可以很快的幫助你學會R的基本操作。</p>
+<p>此外，上課時我們會使用到一些R Packages，上課之前請大家先用以下的指令將它們裝好：</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">install.packages</span>(<span class="st">&quot;conjoint&quot;</span>)
+<span class="kw">install.packages</span>(<span class="st">&quot;fpc&quot;</span>)
+<span class="kw">install.packages</span>(<span class="st">&quot;grDevices&quot;</span>)
+<span class="kw">install.packages</span>(<span class="st">&quot;latex2exp&quot;</span>)
+<span class="kw">install.packages</span>(<span class="st">&quot;manipulate&quot;</span>)
+<span class="kw">install.packages</span>(<span class="st">&quot;rAmCharts&quot;</span>)
+<span class="kw">install.packages</span>(<span class="st">&quot;highcharter&quot;</span>)
+<span class="kw">install.packages</span>(<span class="st">&quot;doParallel&quot;</span>)
+<span class="kw">install.packages</span>(<span class="st">&quot;foreach&quot;</span>)</code></pre></div>
+<p>上課時請攜帶自己的電腦，並儘量裝好上述軟體。</p>
+</div>
+<div id="3c7374726f6e673ee881afe59088e58886e69e90e7b0a1e4bb8b3c2f7374726f6e673e" class="section level2 unnumbered">
+<h2><strong>聯合分析簡介</strong></h2>
+<p><strong>聯合分析</strong> (Conjoint Analysis) 是一種很重要的市場調查工具， 它基本上分成幾個步驟，每一個步驟都有幾種不同的做法:</p>
+<ul>
+<li><strong>卡片設計</strong>：
+<ul>
+<li>屬性(Attribute)</li>
+<li>選項(Levels)</li>
+<li>卡片 (Profiles)</li>
+</ul></li>
+<li><strong>實驗方法</strong>：
+<ul>
+<li>Full-Profile: Sorting &amp; Rating</li>
+<li>Choice Based Conjoint (CBC)</li>
+<li>Adaptive CBC (ACBC)</li>
+</ul></li>
+<li><strong>分析模型</strong>：
+<ul>
+<li>Linear regression</li>
+<li>Multinominal logit</li>
+<li>Hierarchical, mixed-effect model</li>
+<li>Hierarchical bayesian model</li>
+</ul></li>
+</ul>
+<p>其中每一種做法都有相對應的 R package， <a href="http://r-marketing.r-forge.r-project.org/">Chapman &amp; Feit (2015)</a> 這本新書裡面有以上各種模型的介紹和簡單的案例實作。 由於整體程序相當繁複，實務上通常會採用專門的整合式的工具軟體， 如<a href="http://www.sawtoothsoftware.com/">SawTooth Software</a>， 來做聯合分析。在這裡我們的重點擺在聯合分析在行銷策略上面的應用， 至於聯合分析的簡介，請自行參考下列教學影片：</p>
+<ul>
+<li><a href="http://www.youtube.com/watch?v=kGHXO4mzR0g">What is Conjoint Analysis?</a></li>
+<li><a href="http://www.youtube.com/watch?v=PCdtjA32BhA">What can Conjoint Analysis do for you?</a></li>
+<li><a href="http://www.youtube.com/watch?v=X8xJu1pOTtY">Beginner’s Guide for Choose based Conjoint (CBC)?</a> <br/></li>
+</ul>
+<p>或者參考 <a href="http://www.springer.com/la/book/9783540877523">Applied conjoint analysis (Rao 2014)</a>， 同學可以到圖書館網站下載這本書。</p>
+</div>
+<div id="3c7374726f6e673ee8aab2e7a88be585a7e5aeb9e7b0a1e4bb8b3c2f7374726f6e673e" class="section level2 unnumbered">
+<h2><strong>課程內容簡介</strong></h2>
+<p>以下，我們首先練習使用 R 和簡單的線性模型來做 <strong>聯合分析</strong> :</p>
+<ul>
+<li>The <code>conjoint</code> package</li>
+<li>Estimate attribute importance 估計各屬性的重要性</li>
+<li>Estimate part worths 估計各選項的平均價值</li>
+<li>Individual’s utility coefficients 估計各選項對個人的價值</li>
+</ul>
+<p>然後我們利用聯合分析的結果來制定各種 <strong>行銷策略</strong> ，包括：</p>
+<ul>
+<li><strong>市場區隔</strong> (Segmentation):
+<ul>
+<li>Clustering</li>
+<li>Dimension reduction</li>
+<li>Segmentation</li>
+<li>Segment characteristics</li>
+<li>Target selection</li>
+</ul></li>
+<li><strong>產品設計</strong> (Product Design) 和 <strong>訂價策略</strong> (Pricing Strategy):
+<ul>
+<li>Distribution of utility</li>
+<li>Demand curve</li>
+<li>Price optimization</li>
+</ul></li>
+<li><strong>產品線規劃</strong> (Product Line Planning):
+<ul>
+<li>Design multiple products</li>
+<li>Penertration versus cannnibalize</li>
+<li>Multiple prices optimization</li>
+</ul></li>
+<li><strong>競爭策略</strong> (Competitive Strategy):
+<ul>
+<li>Competitive markets (1 or more competitors)</li>
+<li>Estimate market share (<code>logit</code> model)</li>
+<li>The <code>IIA</code> principle</li>
+<li>Segment inflation</li>
+<li>Optimize market share, revenue or profit <br/> <br/></li>
+</ul></li>
+</ul>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+
+<a href="conjoint.html" class="navigation navigation-next navigation-unique" aria-label="Next page""><i class="fa fa-angle-right"></i></a>
+
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"facebook": true,
+"twitter": true,
+"google": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    if (location.protocol !== "file:" && /^https?:/.test(script.src))
+      script.src  = script.src.replace(/^https?:/, '');
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
